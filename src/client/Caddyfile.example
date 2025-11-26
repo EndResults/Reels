@@ -1,0 +1,30 @@
+# Caddy configuration for SPA fallback (Vite-built dist)
+
+:{$PORT} {
+  root * dist
+
+  # Proxy ALL API calls to backend service (preserve full path)
+  handle /api/* {
+    reverse_proxy https://fit-production.up.railway.app {
+      header_up Host fit-production.up.railway.app
+    }
+  }
+
+  # Serve static files, but fall back to index.html for client-side routes
+  try_files {path} /index.html
+  file_server
+
+  # Cache strategy: immutable for hashed assets, no-store for HTML shell
+  @assets path /assets/*
+  header @assets Cache-Control "public, max-age=31536000, immutable"
+
+  @html path /index.html
+  header @html Cache-Control "no-store, no-cache, must-revalidate"
+
+  # Useful headers
+  encode gzip zstd
+  header -Server
+  header Access-Control-Allow-Origin "*"
+  header Access-Control-Allow-Methods "GET, OPTIONS"
+  header Access-Control-Allow-Headers "Origin, Content-Type, Accept, Authorization"
+}

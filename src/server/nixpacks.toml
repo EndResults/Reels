@@ -1,0 +1,33 @@
+# nixpacks.toml (in src/server)
+
+[phases.setup]
+# Forceer Debian runtime met apt
+nixPkgs = ["bash", "coreutils", "apt", "nodejs"]
+aptPkgs = [
+  "libglib2.0-0",
+  "libnss3",
+  "libatk-bridge2.0-0",
+  "libatk1.0-0",
+  "libcups2",
+  "libdrm2",
+  "libxkbcommon0",
+  "libxcomposite1",
+  "libxdamage1",
+  "libxfixes3",
+  "libxrandr2",
+  "libgbm1",
+  "libpango-1.0-0",
+  "libasound2t64",
+  "libpangocairo-1.0-0",
+  "libgtk-3-0",
+  "fonts-liberation"
+]
+
+[phases.install]
+cmds = [
+  "npm ci",
+  "npx playwright install chromium"
+]
+
+[start]
+cmd = "node dist/src/index.js"

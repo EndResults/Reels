@@ -1,0 +1,67 @@
+# nixpacks.toml (in de server root)
+
+[phases.setup]
+nixPkgs = [
+  "bash",
+  "coreutils",
+  "wget",
+  "curl",
+  "git",
+  "gnutar",
+  "gzip",
+  "nodejs_20"
+]
+
+aptPkgs = [
+  "ca-certificates",
+  "fonts-liberation",
+  "libasound2t64",
+  "libatk-bridge2.0-0",
+  "libatk1.0-0",
+  "libatspi2.0-0",
+  "libc6",
+  "libcairo2",
+  "libcups2",
+  "libdbus-1-3",
+  "libexpat1",
+  "libfontconfig1",
+  "libgcc1",
+  "libglib2.0-0",
+  "libgobject-2.0-0",
+  "libgtk-3-0",
+  "libnspr4",
+  "libnss3",
+  "libpango-1.0-0",
+  "libpangocairo-1.0-0",
+  "libstdc++6",
+  "libx11-6",
+  "libx11-xcb1",
+  "libxcb1",
+  "libxcomposite1",
+  "libxcursor1",
+  "libxdamage1",
+  "libxext6",
+  "libxfixes3",
+  "libxi6",
+  "libxrandr2",
+  "libxrender1",
+  "libxss1",
+  "libxtst6",
+  "lsb-release",
+  "xdg-utils",
+  "nodejs",
+  "npm"
+]
+
+# Forceer installatie ook in runtime omgeving
+[phases.build]
+cmds = [
+  "apt-get update && apt-get install -y libglib2.0-0 libnss3 libatk-bridge2.0-0 libgtk-3-0",
+  "npx playwright install --with-deps chromium",
+  "echo '✅ Playwright deps installed during build'"
+]
+
+# Dit wordt uitgevoerd vóór npm start in de runtime container
+[start]
+pre_cmd = "apt-get update && apt-get install -y libglib2.0-0 libnss3 libatk-bridge2.0-0 libgtk-3-0"
+cmd = "npm start"

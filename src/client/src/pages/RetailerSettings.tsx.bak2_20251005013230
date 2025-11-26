@@ -1,0 +1,909 @@
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { 
+  Save, 
+  Eye, 
+  EyeOff, 
+  User, 
+  Building, 
+  Globe, 
+  Lock,
+  Plus,
+  Trash2,
+  Pencil,
+  X,
+  Check,
+  Megaphone
+} from 'lucide-react';
+import api, { authStorage, domainAPI, billingAPI } from '../services/api';
+import RetailerNav from '../components/RetailerNav';
+import PromoSettings from '../components/PromoSettings';
+
+interface DomainData {
+  id: string;
+  domain: string;
+  category: string;
+  name?: string;
+  isActive: boolean;
+}
+
+type PlanTypeUI = 'FREEMIUM' | 'BASIC' | 'PREMIUM' | 'ENTERPRISE';
+
+interface RetailerData {
+  id: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  shopName: string;
+  shopUrl: string;
+  shopType: string;
+  apiKey: string;
+  domains?: DomainData[];
+  plan?: PlanTypeUI; // optional; defaults to FREEMIUM if absent
+}
+
+const RetailerSettings = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [retailer, setRetailer] = useState<RetailerData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  const [showApiKey, setShowApiKey] = useState(false);
+  const [showPasswordForm, setShowPasswordForm] = useState(false);
+  
+  // Form states
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    shopName: '',
+    shopUrl: '',
+    shopType: 'FASHION'
+  });
+  
+  // Domain management state
+  const [domains, setDomains] = useState<DomainData[]>([]);
+  const [newDomain, setNewDomain] = useState({ domain: '', category: 'FASHION', name: '' });
+  const [editingDomainId, setEditingDomainId] = useState<string | null>(null);
+  const [editValues, setEditValues] = useState<{ name: string; category: string }>({ name: '', category: 'FASHION' });
+  // Password management state
+  const [passwordData, setPasswordData] = useState({
+    currentPassword: '',
+    newPassword: '',
+    confirmPassword: ''
+  });
+
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [successMessage, setSuccessMessage] = useState('');
+  const [checkoutBusy, setCheckoutBusy] = useState(false);
+  const [billingError, setBillingError] = useState<string | null>(null);
+
+  const shopTypes = [
+    { value: 'FASHION', label: '👕 Kleding & Mode' },
+    { value: 'BIKES', label: '🚴‍♀️ Fietsen & E-bikes' },
+    { value: 'SHOES', label: '👟 Schoenen & Footwear' },
+    { value: 'MOTORS', label: '🏍️ Motoren & Scooters' },
+    { value: 'GLASSES', label: '🕶️ Brillen & Zonnebrillen' },
+    { value: 'JEWELRY', label: '💍 Sieraden & Accessoires' },
+    { value: 'WATCHES', label: '⌚ Horloges' },
+    { value: 'AUTOMOTIVE', label: '🚗 Automotive' },
+    { value: 'FURNITURE', label: '🏠 Meubels & Interieur' },
+    { value: 'BAGS', label: '🎒 Tassen & Bagage' }
+  ];
+
+  // Helpers for plan & limits
+  const getPlan = (): PlanTypeUI => (retailer?.plan || 'FREEMIUM');
+  const getPlanLimit = (plan: PlanTypeUI): number => {
+    switch (plan) {
+      case 'FREEMIUM': return 1;
+      case 'BASIC': return 2;
+      case 'PREMIUM': return 10;
+      case 'ENTERPRISE': return Number.POSITIVE_INFINITY;
+      default: return 1;
+    }
+  };
+
+  const plan = getPlan();
+  const domainLimit = getPlanLimit(plan);
+  const domainCount = domains.length;
+  const limitReached = domainCount >= domainLimit;
+
+  const startCheckout = async (targetPlan: 'BASIC' | 'PREMIUM', interval: 'month' | 'year' = 'month') => {
+    try {
+      setCheckoutBusy(true);
+      setBillingError(null);
+      const resp = await billingAPI.checkout({ planType: targetPlan, interval });
+      const url = (resp?.data?.url) || (resp?.data?.data?.url);
+      if (typeof url === 'string' && url.startsWith('http')) {
+        window.location.href = url;
+      } else {
+        setBillingError('Kon Stripe checkout URL niet ophalen');
+      }
+    } catch (e) {
+      const anyE: any = e as any;
+      // @ts-ignore
+      setBillingError(anyE?.response?.data?.message || anyE?.message || 'Checkout mislukt');
+    } finally {
+      setCheckoutBusy(false);
+    }
+  };
+
+  useEffect(() => {
+    const fetchProfile = async () => {
+      try {
+        const token = authStorage.getToken();
+        if (!token) {
+          navigate('/login/retailer');
+          return;
+        }
+        const { data: result } = await api.get('/auth-supabase/profile');
+        if (result.success && result.data) {
+          const data = result.data;
+          setRetailer({
+            id: data.id,
+            email: data.email,
+            firstName: data.firstName,
+            lastName: data.lastName,
+            shopName: data.shopName,
+            shopUrl: data.shopUrl,
+            shopType: data.shopType,
+            apiKey: data.apiKey,
+            plan: data.plan || 'FREEMIUM'
+          });
+          setFormData({
+            firstName: data.firstName,
+            lastName: data.lastName,
+            shopName: data.shopName,
+            shopUrl: data.shopUrl,
+            shopType: data.shopType
+          });
+          if (data.domains) {
+            const normalized: DomainData[] = Array.isArray(data.domains)
+              ? data.domains
+              : Object.entries(data.domains).map(([domainUrl, meta]: any) => {
+                  const category = typeof meta === 'string' ? meta : meta?.category;
+                  const name = typeof meta === 'object' ? meta?.name : undefined;
+                  return { id: String(domainUrl), domain: String(domainUrl), category: String(category || 'FASHION'), name, isActive: true };
+                });
+            setDomains(normalized);
+          }
+        } else {
+          navigate('/login/retailer');
+        }
+      } catch (e) {
+        navigate('/login/retailer');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProfile();
+  }, [navigate]);
+
+  // Scroll to promo section when visiting /retailer/settings/promo or #promo
+  useEffect(() => {
+    if (location.pathname.endsWith('/promo') || location.hash === '#promo') {
+      const el = document.getElementById('promo-settings');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [location]);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    if (name === 'shopUrl') {
+      let processedValue = value;
+      if (processedValue.startsWith('https://')) processedValue = processedValue.substring(8);
+      if (processedValue.startsWith('http://')) processedValue = processedValue.substring(7);
+      setFormData(prev => ({ ...prev, [name]: processedValue }));
+    } else {
+      setFormData(prev => ({ ...prev, [name]: value }));
+    }
+  };
+
+  const handleDomainChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    
+    if (name === 'domain') {
+      let processedValue = value;
+      
+      // Remove https:// if user typed it
+      if (processedValue.startsWith('https://')) {
+        processedValue = processedValue.substring(8);
+      }
+      // Remove http:// if user typed it
+      if (processedValue.startsWith('http://')) {
+        processedValue = processedValue.substring(7);
+      }
+      
+      setNewDomain(prev => ({
+        ...prev,
+        [name]: processedValue
+      }));
+    } else {
+      setNewDomain(prev => ({
+        ...prev,
+        [name]: value
+      }));
+    }
+  };
+
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setPasswordData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+    
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({
+        ...prev,
+        [name]: ''
+      }));
+    }
+  };
+
+  const validateForm = () => {
+    const newErrors: Record<string, string> = {};
+
+    if (!formData.firstName.trim()) {
+      newErrors.firstName = 'Voornaam is verplicht';
+    }
+    if (!formData.lastName.trim()) {
+      newErrors.lastName = 'Achternaam is verplicht';
+    }
+    if (!formData.shopName.trim()) {
+      newErrors.shopName = 'Winkelnaam is verplicht';
+    }
+    if (!formData.shopUrl.trim()) {
+      newErrors.shopUrl = 'Webshop URL is verplicht';
+    } else {
+      try {
+        new URL(`https://${formData.shopUrl}`);
+      } catch {
+        newErrors.shopUrl = 'Voer een geldige URL in (bijv. mijnshop.nl)';
+      }
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const validateDomain = () => {
+    const newErrors: Record<string, string> = {};
+
+    if (!newDomain.domain.trim()) {
+      newErrors.domain = 'Domein is verplicht!';
+    } else {
+      try {
+        new URL(`https://${newDomain.domain}`);
+      } catch {
+        newErrors.domain = 'Voer een geldig domein in (bijv. mijnshop.nl)';
+      }
+    }
+
+    if (!newDomain.name.trim()) {
+      newErrors.domainName = 'Webshop naam is verplicht';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const validatePasswordForm = () => {
+    const newErrors: Record<string, string> = {};
+
+    if (!passwordData.currentPassword) {
+      newErrors.currentPassword = 'Huidig wachtwoord is verplicht';
+    }
+    if (!passwordData.newPassword) {
+      newErrors.newPassword = 'Nieuw wachtwoord is verplicht';
+    } else if (passwordData.newPassword.length < 8) {
+      newErrors.newPassword = 'Wachtwoord moet minimaal 8 karakters zijn';
+    }
+    if (passwordData.newPassword !== passwordData.confirmPassword) {
+      newErrors.confirmPassword = 'Wachtwoorden komen niet overeen';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSaveProfile = async () => {
+    if (!validateForm()) return;
+
+    setSaving(true);
+    setErrors({});
+    setSuccessMessage('');
+
+    try {
+      const { data: result } = await api.put('/auth-supabase/update-profile', {
+        ...formData,
+        shopUrl: `https://${formData.shopUrl}` // Add https:// prefix when sending to API
+      });
+
+      if (result.success) {
+        setSuccessMessage('Profiel succesvol bijgewerkt');
+        // Update local retailer data
+        if (retailer) {
+          setRetailer({
+            ...retailer,
+            ...formData
+          });
+        }
+      } else {
+        setErrors({ general: result.message || 'Er is een fout opgetreden' });
+      }
+    } catch (error) {
+      setErrors({ general: 'Er is een fout opgetreden bij het opslaan' });
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handleAddDomain = async () => {
+    if (!validateDomain()) return;
+
+    setSaving(true);
+    setSuccessMessage('');
+    setErrors({});
+
+    try {
+      const { data: result } = await domainAPI.addDomain(`https://${newDomain.domain}`, newDomain.category, newDomain.name);
+
+      if (result.success) {
+        setSuccessMessage('Domein succesvol toegevoegd');
+        // Server returns { data: { id, domains: DomainData[] } }
+        if (Array.isArray(result.data?.domains)) {
+          setDomains(result.data.domains as DomainData[]);
+        }
+        setNewDomain({ domain: '', category: 'FASHION', name: '' });
+      } else {
+        setErrors({ general: result.message || 'Er is een fout opgetreden' });
+      }
+    } catch (error) {
+      setErrors({ general: 'Er is een fout opgetreden bij het toevoegen van het domein' });
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handleRemoveDomain = async (domainId: string) => {
+    setSaving(true);
+    setSuccessMessage('');
+    setErrors({});
+
+    try {
+      const { data: result } = await domainAPI.removeDomain(domainId);
+
+      if (result.success) {
+        setSuccessMessage('Domein succesvol verwijderd');
+        if (Array.isArray(result.data?.domains)) {
+          setDomains(result.data.domains as DomainData[]);
+        }
+      } else {
+        setErrors({ general: result.message || 'Er is een fout opgetreden' });
+      }
+    } catch (error) {
+      setErrors({ general: 'Er is een fout opgetreden bij het verwijderen van het domein' });
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handleChangePassword = async () => {
+    if (!validatePasswordForm()) return;
+
+    setSaving(true);
+    setSuccessMessage('');
+
+    try {
+      const { data: result } = await api.put('/auth-supabase/change-password', {
+        currentPassword: passwordData.currentPassword,
+        newPassword: passwordData.newPassword
+      });
+
+      if (result.success) {
+        setSuccessMessage('Wachtwoord succesvol gewijzigd');
+        setPasswordData({
+          currentPassword: '',
+          newPassword: '',
+          confirmPassword: ''
+        });
+        setShowPasswordForm(false);
+      } else {
+        setErrors({ password: result.message || 'Er is een fout opgetreden' });
+      }
+    } catch (error) {
+      setErrors({ password: 'Er is een fout opgetreden bij het wijzigen van het wachtwoord' });
+    } finally {
+      setSaving(false);
+    }
+  };
+
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
+      </div>
+    );
+  }
+
+  if (!retailer) {
+    return null;
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-100">
+      {/* Navigation */}
+      <RetailerNav
+        title="FiT Instellingen"
+        backTo="/dashboard"
+        showWebshopsLink
+        showPromoLink
+        right={<span className="text-sm text-gray-700">{retailer.firstName} {retailer.lastName}</span>}
+      />
+
+      {/* Main Content */}
+      <div className="max-w-4xl mx-auto py-6 sm:px-6 lg:px-8">
+        {/* Success Message */}
+        {successMessage && (
+          <div className="mb-6 bg-green-50 border border-green-200 rounded-md p-4">
+            <div className="text-sm text-green-700">{successMessage}</div>
+          </div>
+        )}
+
+        {/* General Error */}
+        {errors.general && (
+          <div className="mb-6 bg-red-50 border border-red-200 rounded-md p-4">
+            <div className="text-sm text-red-700">{errors.general}</div>
+          </div>
+        )}
+
+        <div className="space-y-6">
+          {/* Profile Information */}
+          <div className="bg-white shadow rounded-lg">
+            <div className="px-6 py-4 border-b border-gray-200">
+              <h3 className="text-lg font-medium text-gray-900 flex items-center">
+                <User className="h-5 w-5 mr-2" />
+                Persoonlijke Gegevens
+              </h3>
+            </div>
+            <div className="p-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Voornaam
+                  </label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  {errors.firstName && (
+                    <p className="mt-1 text-sm text-red-600">{errors.firstName}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Achternaam
+                  </label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  {errors.lastName && (
+                    <p className="mt-1 text-sm text-red-600">{errors.lastName}</p>
+                  )}
+                </div>
+
+                <div className="md:col-span-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    E-mailadres
+                  </label>
+                  <input
+                    type="email"
+                    value={retailer.email}
+                    disabled
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-500"
+                  />
+                  <p className="mt-1 text-xs text-gray-500">E-mailadres kan niet worden gewijzigd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Shop Information */}
+          <div className="bg-white shadow rounded-lg">
+            <div className="px-6 py-4 border-b border-gray-200">
+              <h3 className="text-lg font-medium text-gray-900 flex items-center">
+                <Building className="h-5 w-5 mr-2" />
+                Webshop Gegevens
+              </h3>
+            </div>
+            <div className="p-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Winkelnaam
+                  </label>
+                  <input
+                    type="text"
+                    name="shopName"
+                    value={formData.shopName}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  {errors.shopName && (
+                    <p className="mt-1 text-sm text-red-600">{errors.shopName}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Webshop Categorie
+                  </label>
+                  <select
+                    name="shopType"
+                    value={formData.shopType}
+                    onChange={handleInputChange}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    {shopTypes.map(type => (
+                      <option key={type.value} value={type.value}>
+                        {type.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="md:col-span-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Webshop URL
+                  </label>
+                  <input
+                    type="url"
+                    name="shopUrl"
+                    value={formData.shopUrl}
+                    onChange={handleInputChange}
+                    placeholder="mijnshop.nl"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  {errors.shopUrl && (
+                    <p className="mt-1 text-sm text-red-600">{errors.shopUrl}</p>
+                  )}
+                  <p className="mt-1 text-xs text-gray-500">Deze URL wordt gebruikt voor widget domein verificatie</p>
+                </div>
+              </div>
+
+              <div className="mt-6 flex justify-end">
+                <button
+                  onClick={handleSaveProfile}
+                  disabled={saving}
+                  className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50"
+                >
+                  <Save className="h-4 w-4 mr-2" />
+                  {saving ? 'Opslaan...' : 'Wijzigingen Opslaan'}
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Domain Management */}
+          <div className="bg-white shadow rounded-lg">
+            <div className="px-6 py-4 border-b border-gray-200">
+              <h3 className="text-lg font-medium text-gray-900 flex items-center">
+                <Globe className="h-5 w-5 mr-2" />
+                Domeinbeheer
+              </h3>
+              <div className="mt-2 flex flex-wrap items-center gap-3">
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                  Abonnement: {plan}
+                </span>
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                  Domeinen: {Number.isFinite(domainLimit) ? `${domainCount} / ${domainLimit}` : `${domainCount} / ∞`}
+                </span>
+                {limitReached && Number.isFinite(domainLimit) && (
+                  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                    Limiet bereikt
+                  </span>
+                )}
+              </div>
+              {limitReached && Number.isFinite(domainLimit) && (
+                <p className="text-xs text-yellow-700 mt-2">
+                  Je hebt het maximum aantal domeinen voor het {plan.toLowerCase()} abonnement bereikt. Upgrade om meer domeinen toe te voegen.
+                </p>
+              )}
+            </div>
+            <div className="p-6">
+              {/* Add New Domain Form */}
+              <div className="bg-gray-50 rounded-lg p-4 mb-6">
+                <h4 className="text-md font-medium text-gray-900 mb-4">Nieuw domein toevoegen</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                      Webshop naam
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      value={newDomain.name}
+                      onChange={handleDomainChange}
+                      placeholder="Bijv. ModeBoy Outlet"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    {errors.domainName && (
+                      <p className="mt-1 text-sm text-red-600">{errors.domainName}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                      Categorie
+                    </label>
+                    <select
+                      name="category"
+                      value={newDomain.category}
+                      onChange={handleDomainChange}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                      {shopTypes.map(type => (
+                        <option key={type.value} value={type.value}>
+                          {type.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div className="md:col-span-2">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                      Domein
+                    </label>
+                    <div className="flex items-center space-x-2">
+                      <span className="text-gray-500 text-sm">https://</span>
+                      <input
+                        type="text"
+                        name="domain"
+                        value={newDomain.domain}
+                        onChange={handleDomainChange}
+                        placeholder="mijnshop.nl"
+                        className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      />
+                    </div>
+                    {errors.domain && (
+                      <p className="mt-1 text-sm text-red-600">{errors.domain}</p>
+                    )}
+                    <p className="mt-1 text-xs text-gray-500">Voer alleen het domein in, https:// wordt automatisch toegevoegd</p>
+                  </div>
+                </div>
+
+                <div className="mt-4">
+                  <button
+                    onClick={handleAddDomain}
+                    disabled={saving || limitReached}
+                    className={`flex items-center px-4 py-2 rounded-md disabled:opacity-50 ${limitReached ? 'bg-gray-300 text-gray-700 cursor-not-allowed' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
+                  >
+                    <Plus className="h-4 w-4 mr-2" />
+                    {limitReached ? 'Domeinlimiet bereikt' : 'Domein Toevoegen'}
+                  </button>
+                </div>
+              </div>
+
+              {/* Domain List */}
+              <div>
+                <h4 className="text-md font-medium text-gray-900 mb-4">Actieve domeinen</h4>
+                {domains.length === 0 ? (
+                  <div className="text-center py-8 text-gray-500">
+                    <Globe className="h-12 w-12 mx-auto mb-4 text-gray-300" />
+                    <p>Nog geen domeinen toegevoegd</p>
+                    <p className="text-sm">Voeg een domein toe om de FiT widget te kunnen gebruiken</p>
+                  </div>
+                ) : (
+                  <div className="space-y-3">
+                    {domains.map(domain => {
+                      const categoryLabel = shopTypes.find(type => type.value === domain.category)?.label || domain.category;
+                      return (
+                        <div key={domain.id} className="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                          <div className="flex-1">
+                            <div className="flex items-center space-x-3">
+                              <Globe className="h-5 w-5 text-blue-600" />
+                              <div>
+                                <p className="font-medium text-gray-900">{domain.name || 'Onbenoemde webshop'}</p>
+                                <p className="text-sm text-gray-500">{domain.domain}</p>
+                                <p className="text-xs text-gray-500">{categoryLabel}</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <span className={`px-2 py-1 text-xs rounded-full ${
+                              domain.isActive 
+                                ? 'bg-green-100 text-green-800' 
+                                : 'bg-gray-100 text-gray-800'
+                            }`}>
+                              {domain.isActive ? 'Actief' : 'Inactief'}
+                            </span>
+                            <button
+                              onClick={() => handleRemoveDomain(domain.id)}
+                              disabled={saving}
+                              className="flex items-center px-3 py-1 text-red-600 hover:text-red-800 hover:bg-red-50 rounded-md disabled:opacity-50"
+                            >
+                              <Trash2 className="h-4 w-4 mr-1" />
+                              Verwijderen
+                            </button>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Promo Settings */}
+          <div className="bg-white shadow rounded-lg" id="promo-settings">
+            <div className="px-6 py-4 border-b border-gray-200">
+              <h3 className="text-lg font-medium text-gray-900 flex items-center">
+                <Megaphone className="h-5 w-5 mr-2" />
+                Promo instellingen
+              </h3>
+              <p className="text-sm text-gray-500 mt-1">Beheer de promo banner die op je webshop kan verschijnen.</p>
+            </div>
+            <div className="p-6">
+              <PromoSettings />
+            </div>
+          </div>
+
+          {/* API Key */}
+          <div className="bg-white shadow rounded-lg">
+            <div className="px-6 py-4 border-b border-gray-200">
+              <h3 className="text-lg font-medium text-gray-900 flex items-center">
+                <Globe className="h-5 w-5 mr-2" />
+                API Toegang
+              </h3>
+            </div>
+            <div className="p-6">
+              <div className="flex flex-col space-y-4">
+                <div className="flex items-center space-x-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    API Key
+                  </label>
+                  <input
+                    type={showApiKey ? 'text' : 'password'}
+                    value={retailer.apiKey}
+                    disabled
+                    className="flex-1 px-3 py-2 border border-gray-300 rounded-md bg-gray-50 text-gray-500 font-mono text-sm"
+                  />
+                  <button
+                    onClick={() => setShowApiKey(!showApiKey)}
+                    className="px-3 py-2 border border-gray-300 rounded-md hover:bg-gray-50"
+                  >
+                    {showApiKey ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                  </button>
+                </div>
+                <p className="mt-1 text-xs text-gray-500">
+                  Deze API key wordt gebruikt voor je FiT widget. Deel deze niet met anderen.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Password Change */}
+          <div className="bg-white shadow rounded-lg">
+            <div className="px-6 py-4 border-b border-gray-200">
+              <h3 className="text-lg font-medium text-gray-900 flex items-center">
+                <Lock className="h-5 w-5 mr-2" />
+                Wachtwoord
+              </h3>
+            </div>
+            <div className="p-6">
+              {!showPasswordForm ? (
+                <div>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Wijzig je wachtwoord om je account veilig te houden.
+                  </p>
+                  <button
+                    onClick={() => setShowPasswordForm(true)}
+                    className="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200"
+                  >
+                    Wachtwoord Wijzigen
+                  </button>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  {errors.password && (
+                    <div className="bg-red-50 border border-red-200 rounded-md p-3">
+                      <div className="text-sm text-red-700">{errors.password}</div>
+                    </div>
+                  )}
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                      Huidig Wachtwoord
+                    </label>
+                    <input
+                      type="password"
+                      name="currentPassword"
+                      value={passwordData.currentPassword}
+                      onChange={handlePasswordChange}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    {errors.currentPassword && (
+                      <p className="mt-1 text-sm text-red-600">{errors.currentPassword}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                      Nieuw Wachtwoord
+                    </label>
+                    <input
+                      type="password"
+                      name="newPassword"
+                      value={passwordData.newPassword}
+                      onChange={handlePasswordChange}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    {errors.newPassword && (
+                      <p className="mt-1 text-sm text-red-600">{errors.newPassword}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                      Bevestig Nieuw Wachtwoord
+                    </label>
+                    <input
+                      type="password"
+                      name="confirmPassword"
+                      value={passwordData.confirmPassword}
+                      onChange={handlePasswordChange}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    {errors.confirmPassword && (
+                      <p className="mt-1 text-sm text-red-600">{errors.confirmPassword}</p>
+                    )}
+                  </div>
+
+                  <div className="flex space-x-3">
+                    <button
+                      onClick={handleChangePassword}
+                      disabled={saving}
+                      className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:opacity-50"
+                    >
+                      {saving ? 'Wijzigen...' : 'Wachtwoord Wijzigen'}
+                    </button>
+                    <button
+                      onClick={() => {
+                        setShowPasswordForm(false);
+                        setPasswordData({
+                          currentPassword: '',
+                          newPassword: '',
+                          confirmPassword: ''
+                        });
+                        setErrors({});
+                      }}
+                      className="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200"
+                    >
+                      Annuleren
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default RetailerSettings;

@@ -1,0 +1,24 @@
+# Caddy configuration for FiT SPA frontend (Vite-built dist)
+
+:{$PORT} {
+    root * /app/dist
+
+    encode gzip zstd
+
+    handle /api/widget/* {
+        reverse_proxy https://fit-production.up.railway.app {
+            header_up Host fit-production.up.railway.app
+        }
+    }
+
+    try_files {path} /index.html
+    file_server
+
+    header {
+        -Server
+        Access-Control-Allow-Origin "*"
+        Access-Control-Allow-Methods "GET, OPTIONS"
+        Access-Control-Allow-Headers "Origin, Content-Type, Accept, Authorization"
+        Cache-Control no-cache, no-store, must-revalidate
+    }
+}

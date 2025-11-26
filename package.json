@@ -1,0 +1,70 @@
+{
+  "name": "reels",
+  "version": "1.0.0",
+  "description": "Reels by Brendr.io - Server",
+  "main": "src/server/dist/src/index.js",
+  "scripts": {
+    "clean": "npx rimraf src/server/dist src/client/dist",
+    "install:server": "npm ci --prefix src/server",
+    "install:client": "npm ci --prefix src/client",
+    "install:all": "npm run install:server && npm run install:client",
+    "prebuild": "npm run install:all",
+    "build:server": "npm run build --prefix src/server",
+    "build:client": "npm run build --prefix src/client",
+    "build:all": "npm run clean && npm run build:client && npm run build:server",
+    "postinstall": "echo skipping nested installs",
+    "dev": "npm run dev --prefix src/server",
+    "build": "npm run build:all",
+    "start": "node src/server/dist/src/index.js",
+    "test": "npm run test --prefix src/server"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.2",
+    "@types/uuid": "^10.0.0",
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "cheerio": "^1.1.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^7.2.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^7.0.10",
+    "sharp": "^0.32.5",
+    "stripe": "^13.6.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cheerio": "^0.22.35",
+    "@types/cookie-parser": "^1.4.6",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.3",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/morgan": "^1.9.4",
+    "@types/multer": "^1.4.13",
+    "@types/node": "^20.5.0",
+    "@types/nodemailer": "^6.4.9",
+    "jest": "^29.6.2",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "keywords": [
+    "reels",
+    "virtual-fitting",
+    "saas"
+  ],
+  "author": "Brendr.io",
+  "license": "MIT"
+}

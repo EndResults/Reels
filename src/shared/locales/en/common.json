@@ -1,0 +1,1481 @@
+{
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "or": "or",
+    "language": {
+      "label": "Language",
+      "dutch": "Dutch",
+      "english": "English"
+    }
+  },
+  "unsubscribeConfirm": {
+    "hero": {
+      "title": "Do you want to unsubscribe?",
+      "subtitle": "You are about to unsubscribe from marketing and update emails for FiT by Brendr."
+    },
+    "body": {
+      "heading": "Confirm your unsubscribe",
+      "intro": "This secure link lets you unsubscribe from marketing and update emails.",
+      "description": "The email address below will be unsubscribed from news, promotions and product updates about FiT by Brendr.",
+      "emailLabel": "Email address"
+    },
+    "actions": {
+      "confirm": "Yes, unsubscribe me",
+      "submitting": "Unsubscribing...",
+      "pleaseWait": "Please wait while we process your unsubscribe request."
+    },
+    "error": {
+      "title": "Link invalid or incomplete",
+      "missingParams": "We can’t complete this unsubscribe because the link is incomplete. Please try again via the most recent email or contact us if the issue persists."
+    }
+  },
+  
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "webshops": "Webshops",
+    "login": "Login",
+    "loginConsumer": "Login as consumer",
+    "loginRetailer": "Login as retailer",
+    "startFree": "Start free now"
+  },
+  "pricing": {
+    "header": { "title": "Choose your plan", "subtitle": "Start with FiT today and boost your conversion" },
+    "billing": { "monthly": "Prices with monthly billing", "yearly": "Prices with yearly billing*" },
+    "note": "*After 12 months, cancellable monthly",
+    "currency": "Currency:",
+    "perMonth": "/month",
+    "popular": "Popular",
+    "customPrice": "Custom",
+    "buttons": {
+      "startFree": "Start free",
+      "loading": "Loading…",
+      "active": "Active",
+      "downgradeSoon": "Downgrade",
+      "upgrade": "Upgrade",
+      "contact": "Contact"
+    },
+    "list": {
+      "fittingRoom": "Online fitting room",
+      "shopsOne": "1 webshop",
+      "shopsThree": "3 webshops",
+      "shopsTwelve": "12 webshops",
+      "shopsInfinite": "∞ webshops",
+      "fits100": "50 FiTs (p/m)",
+      "fits1000": "500 FiTs (p/m)",
+      "fits5000": "2,500 FiTs (p/m)",
+      "fitsGT5000": "> 2,500 FiTs (p/m)",
+      "insightsVisitors": "Visitor insights",
+      "insightsCounts": "Visitor counts",
+      "supportBasic": "Basic support",
+      "support247": "24/7 support",
+      "brandingHideBrendr": "Hide BrendR®",
+      "analytics": "Analytics",
+      "customBranding": "Custom branding",
+      "customIntegration": "Custom integration",
+      "accountManager": "Account manager",
+      "sla": "SLA guarantee"
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "passwordPlaceholder": "At least 8 characters",
+    "loggingIn": "Signing in...",
+    "noAccountRegister": "No account yet? Register here",
+    "createAccount": "Create account",
+    "creatingAccount": "Creating account...",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "confirmPassword": "Confirm password",
+    "loginSuccess": "Login successful! Starting FiT session...",
+    "loginFailed": "Login failed. Please try again.",
+    "registerSuccess": "Account created successfully! Starting FiT session...",
+    "registerFailed": "Registration failed. Please try again.",
+    "passwordMismatch": "Passwords do not match",
+    "hasAccountLogin": "Already have an account? Log in here",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "loginOnDashboard": "Login to Dashboard",
+    "loginWithGoogle": "Sign in with Google",
+    "loginWithFacebook": "Sign in with Facebook",
+    "loginErrorGeneric": "An error occurred while logging in",
+    "emailPlaceholder": "sarah@example.com",
+    "emailPlaceholderShop": "you@webshop.com",
+    "confirmPasswordPlaceholder": "Repeat your password",
+    "passwordHelp": "At least 8 characters",
+    "passwordHelpStrong": "At least 8 characters with letters and numbers",
+    "haveAccountQuestion": "Already have an account?",
+    "loginHere": "Log in here"
+  },
+  "retailerLogin": {
+    "title": "Retailer Login",
+    "subtitle": "Access your FiT dashboard and analytics",
+    "areYouConsumer": "Are you a consumer?",
+    "clickHereConsumerLogin": "Click here for consumer login",
+    "dashboardPreviewTitle": "Your dashboard includes:",
+    "features": {
+      "analytics": "Real-time FiT session analytics",
+      "returns": "Conversion and returns stats",
+      "widgetTools": "Widget integration tools",
+      "planBilling": "Plan management and billing"
+    },
+    "noRetailerAccount": "No retailer account yet?",
+    "registerYourShop": "Register your shop",
+    "bannerTitle": "Retailer Dashboard",
+    "bannerText": "View analytics, manage your plan and integrate FiT"
+  },
+  "consumerLogin": {
+    "title": "Consumer Login",
+    "subtitle": "Access your virtual fitting room and profile",
+    "areYouRetailer": "Are you a retailer?",
+    "clickHereRetailerLogin": "Click here for retailer login",
+    "profilePreviewTitle": "Your FiT Profile",
+    "profilePreviewText": "Access your measurements and virtual fitting room",
+    "profileContentsTitle": "In your profile you'll find:",
+    "contents": {
+      "savedMeasurements": "Your saved body measurements",
+      "sessionsHistory": "History of FiT sessions",
+      "favoriteItems": "Favorite items and shops",
+      "personalSizeAdvice": "Personal size advice"
+    },
+    "noAccount": "No account yet?",
+    "registerFreeAccount": "Create a free account",
+    "tipNoAccountUse": "Tip: You can also use FiT without an account at participating shops"
+  },
+  "consumerRegister": {
+    "title": "Create Consumer Account",
+    "subtitle": "See how products truly look on you with FiT’s virtual AI fitting room",
+    "areYouRetailer": "Are you a retailer?",
+    "clickHereRetailerRegistration": "Click here for retailer registration",
+    "benefitTitle": "Free virtual AI fitting room",
+    "benefitText": "Instantly preview how clothing and products look on you",
+    "featuresTitle": "What can you do with FiT?",
+    "features": {
+      "uploadPhoto": "Upload a photo and see how products look in your situation",
+      "tryClothes": "Try clothing, jewelry, watches, glasses & more virtually",
+      "lessReturns": "Fewer returns, better choices, more shopping confidence",
+      "worksAllShops": "Works on all supported webshops"
+    },
+    "newsletterOptIn": "Keep me updated about new features and tips",
+    "createFreeAccount": "Create Free Account",
+    "registerWithGoogle": "Register with Google",
+    "registerWithFacebook": "Register with Facebook"
+  },
+  "verify": {
+    "headlineFail": "Verification failed",
+    "headlineSuccess": "Email confirmed",
+    "subFailGeneric": "We couldn’t confirm your email. Please try again or request a new verification email.",
+    "subRecoverySuccess": "Your password has been changed successfully. You can now log in.",
+    "subSuccessDefault": "Thanks! Your email address has been confirmed. You can now log in.",
+    "toLogin": "Go to login",
+    "toHome": "Back to home",
+    "noMailPrefix": "Didn’t receive an email? Resend verification:",
+    "emailPlaceholder": "you@example.com",
+    "resending": "Sending…",
+    "resend": "Resend",
+    "invalidEmail": "Enter a valid email address",
+    "resendSuccess": "Verification email has been resent. Please check your inbox.",
+    "resendFail": "Sending failed"
+  },
+  "legal": {
+    "agreePrefix": "I agree to the",
+    "terms": "terms and conditions",
+    "and": "and",
+    "privacy": "privacy policy"
+  },
+  "homepage": {
+    "hero": {
+      "titleStart": "The virtual fitting room for",
+      "titleEm": "every webshop",
+      "subtitle": "With FiT, every customer becomes the model. Let visitors see themselves with your products directly on the product page.",
+      "ctaPrimary": "Start free now",
+      "ctaSecondary": "See all features"
+    },
+    "stats": {
+      "conversion": "More conversion",
+      "conversionTooltip": "Case studies report 20–30% conversion increases for retailers using fit technology.",
+      "returns": "Fewer returns",
+      "returnsTooltip": "Research shows sizing & fit technology can significantly reduce returns.",
+      "fit": "FiT",
+      "fitTooltip": "Always the right fit experience for your customers."
+    },
+    "featuresSection": {
+      "title": "Why choose FiT?",
+      "subtitle": "FiT integrates seamlessly into any webshop and helps customers find the product that truly fits their style, situation, and preferences."
+    },
+    "integrate": {
+      "title": "Easy to integrate",
+      "desc": "Add our FiT button to your product pages with just one line of code. No complex setup or technical knowledge required."
+    },
+    "ai": {
+      "title": "AI-powered fitting experience",
+      "desc": "FiT creates realistic visualizations that let customers see your products in their own world, whether it’s clothing they wear, furniture in their living room, or accessories in their environment."
+    },
+    "cta": {
+      "title": "Ready to try FiT?",
+      "subtitle": "Start free and experience how easy it is to enrich your webshop with a virtual fitting session. Integrate FiT today and watch your conversions grow.",
+      "cta": "Start now"
+    },
+    "alt": {
+      "hero": "FiT hero visual",
+      "integrationBike": "Integration example - BIKE category",
+      "aiAdvice": "AI-powered size advice example"
+    }
+  },
+  "features": {
+    "hero": {
+      "title": "Choose the plan that suits you",
+      "subtitle": "With FiT, every product page becomes a personal online fitting room. Our plans grow with you, from starter to enterprise."
+    },
+    "compare": {
+      "title": "Compare all features",
+      "subtitle": "A complete overview of what each plan offers",
+      "table": {
+        "feature": "Feature",
+        "starter": "Starter",
+        "basic": "Basic",
+        "premium": "Premium",
+        "enterprise": "Enterprise",
+        "rows": {
+          "fittingRoom": "Online fitting room",
+          "insights": "Insights",
+          "shops": "Webshops",
+          "fitsPerMonth": "FiTs per month",
+          "branding": "Branding",
+          "support": "Support",
+          "customIntegration": "Custom integration",
+          "customAnalytics": "Custom analytics",
+          "sessionsCount": "Sessions count",
+          "visitorInsights": "Visitor insights",
+          "dash": "—",
+          "detailed": "Detailed",
+          "brendr": "BrendR",
+          "toggleable": "Toggleable",
+          "custom": "Custom",
+          "standard": "Standard",
+          "twentyfourSeven": "24/7",
+          "sla": "SLA"
+        }
+      }
+    },
+    "info": {
+      "title": "Important information",
+      "billing": {
+        "title": "Billing",
+        "text": "Current prices are shown in the pricing widget on this page. After 12 months your subscription can be canceled monthly. Payment is processed securely via Stripe."
+      },
+      "fitting": {
+        "title": "Online fitting room",
+        "text": "Each webshop gets a unique API key. All plans include the same powerful FiT widget with integration on product pages."
+      },
+      "branding": {
+        "title": "Branding",
+        "text": "From Premium you can disable the BrendR logo. Enterprise customers get fully custom branding with colors, logo and UI adjustments."
+      },
+      "insightsPerPlan": "Insights per plan",
+      "table": {
+        "headers": { "plan": "Plan", "available": "Available insights" },
+        "rows": {
+          "starter": "Basic counter of FiT sessions with date range filter",
+          "basic": "Unique users + overview of last 4 sessions",
+          "premium": "Full session overview (gender, items, date, PDP link)",
+          "enterprise": "Includes conversion tracking (Google Analytics, etc.)"
+        }
+      }
+    },
+    "categoriesHero": {
+      "title": "A perfect FiT for every category",
+      "subtitle1": "Whether you sell fashion, offer bikes or present car accessories, FiT adapts to your webshop type.",
+      "subtitle2": "Discover below how FiT works its magic in every category 👇"
+    },
+    "categoriesAccordion": {
+      "FASHION": {
+        "title": "Clothing & Fashion",
+        "description": "Show customers how your clothing truly looks on them, from casual to chic.",
+        "specs": {
+          "itemsPerOutfit": { "label": "Items per outfit", "value": "Multiple garments combinable" },
+          "studioStyle": { "label": "Studio style", "value": "Neutral background and perfect lighting" },
+          "realWorldStyle": { "label": "Real-world style", "value": "Natural setting like office, cafe or outdoors" }
+        }
+      },
+      "BIKES": {
+        "title": "Bicycles & E-bikes",
+        "description": "Let visitors see themselves on their new bike, in motion or in style.",
+        "specs": {
+          "itemsPerUse": { "label": "Items per use", "value": "1 bike per user" },
+          "studioStyle": { "label": "Studio style", "value": "Stable pose with neutral background" },
+          "realWorldStyle": { "label": "Real-world style", "value": "Outdoor environment such as park or street" }
+        }
+      },
+      "AUTOMOTIVE": {
+        "title": "Automotive",
+        "description": "Ideal for accessories, upholstery or interior products.",
+        "specs": {
+          "itemsPerUse": { "label": "Items per use", "value": "1 vehicle or accessory" },
+          "inCarStyle": { "label": "In-car style", "value": "Realistic photo behind the wheel or in the interior" }
+        }
+      },
+      "JEWELRY": {
+        "title": "Jewelry & Accessories",
+        "description": "Let jewelry shine in natural lighting with realistic skin tones.",
+        "specs": {
+          "itemsPerLook": { "label": "Items per look", "value": "Multiple accessories combinable" },
+          "studioStyle": { "label": "Studio style", "value": "Close-ups with soft lighting" },
+          "lifestyleStyle": { "label": "Lifestyle style", "value": "Natural situations with human warmth" }
+        }
+      },
+      "SHOES": {
+        "title": "Shoes & Footwear",
+        "description": "From sneakers to boots: FiT literally puts your collection in motion.",
+        "specs": {
+          "itemsPerSession": { "label": "Items per session", "value": "1 pair" },
+          "studioStyle": { "label": "Studio style", "value": "Neutral shots focusing on shape" },
+          "realWorldStyle": { "label": "Real-world style", "value": "Outdoor locations like sidewalk, path or shop floor" }
+        }
+      },
+      "MOTORS": {
+        "title": "Motorcycles & Scooters",
+        "description": "Let customers experience their new helmet, jacket or accessory as if they're already riding.",
+        "specs": {
+          "itemsPerUse": { "label": "Items per use", "value": "1 motorcycle or outfit" },
+          "studioStyle": { "label": "Studio style", "value": "Motorcycle in stable pose" },
+          "outdoorRideStyle": { "label": "Outdoor ride style", "value": "Street, mountain road or parking location" }
+        }
+      },
+      "GLASSES": {
+        "title": "Glasses & Sunglasses",
+        "description": "Immediately show how a frame suits face shape and style.",
+        "specs": {
+          "itemsPerSession": { "label": "Items per session", "value": "1 pair of glasses" },
+          "studioStyle": { "label": "Studio style", "value": "Close-up with neutral background" },
+          "lifestyleStyle": { "label": "Lifestyle style", "value": "Outdoor locations with sunlight or reflections" }
+        }
+      },
+      "WATCHES": {
+        "title": "Watches",
+        "description": "Let customers experience how your watch complements their wrist.",
+        "specs": {
+          "itemsPerSession": { "label": "Items per session", "value": "1 watch" },
+          "studioStyle": { "label": "Studio style", "value": "Macro focus on wrist and details" },
+          "lifestyleStyle": { "label": "Lifestyle style", "value": "Context such as desk, steering wheel or action" }
+        }
+      },
+      "BAGS": {
+        "title": "Bags & Luggage",
+        "description": "From handbag to suitcase, FiT shows correct proportions and carrying style.",
+        "specs": {
+          "itemsPerUse": { "label": "Items per use", "value": "1 bag or set" },
+          "studioStyle": { "label": "Studio style", "value": "Clear front and side views" },
+          "realWorldStyle": { "label": "Real-world style", "value": "Everyday situations such as travel or shopping" }
+        }
+      },
+      "FURNITURE": {
+        "title": "Furniture & Interior",
+        "description": "Let customers visualize how your furniture fits their space.",
+        "specs": {
+          "itemsPerScene": { "label": "Items per scene", "value": "Multiple furniture items combinable" },
+          "studioStyle": { "label": "Studio style", "value": "Product on plain background" },
+          "inHomeStyle": { "label": "In-home style", "value": "Realistic living room, bedroom or office setting" }
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Start your free trial and revolutionize your online shopping experience. Implement FiT today and see conversions rise.",
+      "primary": "Start free now",
+      "secondary": "Contact us"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Have questions? Let's talk!",
+      "subtitle": "Our team is ready to help you. Get in touch and discover how FiT can transform your webshop."
+    },
+    "sidebar": {
+      "title": "Contact information",
+      "subtitle": "Fill in the form or contact us directly. We respond within 24 hours.",
+      "emailUs": "Email us",
+      "callUs": "Call us",
+      "visitUs": "Visit us",
+      "officeHours": "Mon–Fri from 9:00 to 17:00"
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "Tell us more about yourself and what you have in mind.",
+      "nameLabel": "Your name",
+      "namePlaceholder": "Name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "messageLabel": "Tell us about your project",
+      "messagePlaceholder": "How can we help you?",
+      "sending": "Sending...",
+      "send": "Send message",
+      "success": "Thanks! Your message has been sent. We will contact you as soon as possible.",
+      "failGeneric": "An error occurred while sending.",
+      "fail": "Sending failed. Please try again later."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subtitle": "Do you have a question? Check our FAQ first or contact us directly.",
+      "cards": {
+        "quick": { "title": "Quick response", "text": "We respond within 24 hours to all messages" },
+        "phone": { "title": "Phone support", "text": "Call us for direct help during office hours" },
+        "email": { "title": "Email support", "text": "Send an email for detailed questions" }
+      }
+    }
+  },
+  "demo": {
+    "hero": {
+      "title": "FiT Demo",
+      "subtitle": "See how FiT works in a short demo!"
+    }
+  },
+  "about": {
+    "hero": { "title": "About BrendR" },
+    "content": {
+      "p1": "BrendR is part of EndResults and focuses on developing smart, scalable solutions for e-commerce businesses.",
+      "p2": "Our strength lies in combining AI and automation to accelerate processes and enhance customer experiences.",
+      "p3": "Founded in 2025 by Clinton End, BrendR builds on nearly a decade of Clinton’s experience as a Product Owner and E-commerce Manager, leading projects across retail, fashion, and technology. His mission: to make digital growth accessible and sustainable for every business.",
+      "learnMore": "Learn more about EndResults:",
+      "learnMoreLinkLabel": "endresults.nl"
+    },
+    "cta": {
+      "title": "Questions or collaboration?",
+      "subtitle": "Get in touch, we’re happy to think along.",
+      "primary": "Contact us",
+      "secondary": "See all features"
+    }
+  },
+  "unsubscribe": {
+    "hero": {
+      "title": "You have been unsubscribed",
+      "subtitle": "We have successfully processed your request to unsubscribe from our emails."
+    },
+    "body": {
+      "main": "You will no longer receive marketing or update emails from FiT by Brendr on this email address.",
+      "noteService": "Note: you may still receive important service emails that are required to keep your account or FiT sessions working properly (for example password resets or security notifications).",
+      "moreInfo": "Want to know more about how we handle your data? Read our"
+    }
+  },
+  "footer": {
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "demo": "Demo",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "contact": "Contact",
+    "apiDocs": "API Docs",
+    "company": "Company",
+    "about": "About us",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "tagline": "The virtual fitting room for every webshop. Increase your conversion and reduce returns.",
+    "copyright": "© {{year}} FiT by Brendr.io. All rights reserved."
+  },
+  "terms": {
+    "hero": {
+      "title": "Terms and Conditions",
+      "updated": "Last updated: October 1, 2025"
+    },
+    "sections": {
+      "definitions": {
+        "title": "1. Definitions",
+        "lead": "The following terms are used in these Terms and Conditions:",
+        "items": {
+          "fit": { "title": "FiT", "text": "The virtual fitting room service provided by EndResults" },
+          "platform": { "title": "Platform", "text": "The website and application of FiT by BrendR" },
+          "provider": { "title": "Service Provider", "text": "EndResults, Chamber of Commerce 57445036" },
+          "user": { "title": "User", "text": "Natural person using FiT" },
+          "retailer": { "title": "Retailer", "text": "Business user integrating FiT" },
+          "session": { "title": "FiT session", "text": "A virtual fitting room session" }
+        }
+      },
+      "services": {
+        "title": "2. Services",
+        "consumer": {
+          "title": "FiT Consumer Services",
+          "b1": "Virtual fitting sessions",
+          "b2": "Storage of profile data and photos",
+          "b3": "Sizing and recommendations",
+          "b4": "Session history"
+        },
+        "retailer": {
+          "title": "FiT Retailer Services",
+          "b1": "Widget integration for webshops",
+          "b2": "Analytics dashboard",
+          "b3": "Session management and API access"
+        },
+        "availability": "📌 Availability: EndResults targets 99% annual uptime, excluding scheduled maintenance."
+      },
+      "subscriptions": {
+        "title": "3. Subscriptions and pricing",
+        "types": {
+          "title": "Subscription types for Retailers",
+          "starter": { "name": "Starter", "sessions": "50 sessions/month" },
+          "professional": { "name": "Basic", "sessions": "500 sessions/month" },
+          "business": { "name": "Premium", "sessions": "2,500 sessions/month" },
+          "enterprise": { "name": "Enterprise", "custom": "Custom", "sessions": "> 2,500 sessions/month" }
+        },
+        "payment": {
+          "title": "Payment terms",
+          "b1": "→ Payment in advance per month or year",
+          "b2": "→ Payments are automatically collected via Stripe",
+          "b3": "→ Access may be suspended in case of non-payment",
+          "b4": "→ Prices are exclusive of VAT"
+        }
+      },
+      "liability": {
+        "title": "4. Liability",
+        "limit": {
+          "title": "Limitation of liability",
+          "lead": "EndResults is not liable for:",
+          "b1": "Indirect damages, consequential damages or lost profits",
+          "b2": "Loss of data or revenue",
+          "b3": "Damages caused by third parties or hackers",
+          "b4": "Force majeure situations"
+        },
+        "max": {
+          "title": "Maximum liability",
+          "text": "Liability is limited to the amount paid out by the insurance, or failing that, to the amount of the fees paid by the Customer in the three months preceding the event causing the damage."
+        }
+      },
+      "ip": {
+        "title": "5. Intellectual property",
+        "ownership": {
+          "title": "Ownership rights",
+          "text": "All rights to the Platform, technology and content belong to EndResults ©. The name \"FiT by BrendR\" and related logos are registered trademarks."
+        },
+        "license": {
+          "title": "Usage license",
+          "text": "Users receive a non-exclusive, non-transferable license, limited to normal use in accordance with these terms. Retailers may integrate the FiT widget on their own website."
+        },
+        "ugc": {
+          "title": "User-generated content",
+          "text": "Users retain ownership of their uploaded content. Users grant EndResults a license to use content for service delivery."
+        }
+      },
+      "contact": {
+        "title": "6. Contact",
+        "company": {
+          "title": "Company details",
+          "name": "EndResults",
+          "kvk": "57445036",
+          "vat": "NL002014399B73"
+        },
+        "address": {
+          "title": "Address",
+          "line1": "Jupiterlaan 33",
+          "line2": "3318JC Dordrecht",
+          "country": "Netherlands"
+        },
+        "contact": {
+          "title": "Get in touch",
+          "emailLabel": "Email:",
+          "websiteLabel": "Website:"
+        },
+        "cta": "By using FiT by BrendR you acknowledge that you have read, understood and accepted these Terms and Conditions."
+      }
+    }
+  },
+  "privacy": {
+    "hero": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: October 1, 2025"
+    },
+    "intro": "Welcome to FiT by BrendR. EndResults (\"we\", \"us\" or \"our\") respects your privacy and is committed to protecting your personal data. This privacy policy informs you about how we handle your personal data when you visit our website and use our services.",
+    "sections": {
+      "contact": {
+        "title": "1. Contact details",
+        "labels": {
+          "businessName": "Business name:",
+          "kvk": "Chamber of Commerce number:",
+          "vat": "VAT number:",
+          "country": "Country:",
+          "address": "Address:"
+        }
+      },
+      "collect": {
+        "title": "2. Data we collect",
+        "personal": {
+          "title": "2.1 Personal identification data",
+          "items": {
+            "name": "First and last name",
+            "email": "Email address",
+            "birthdate": "Date of birth",
+            "gender": "Gender"
+          }
+        },
+        "business": {
+          "title": "2.2 Business data (for retailers)",
+          "items": {
+            "company": "Company name",
+            "website": "Website URL",
+            "type": "Company type"
+          }
+        },
+        "profile": {
+          "title": "2.3 Profile data",
+          "items": {
+            "photos": "Profile photos",
+            "body": "Body measurements (for FiT sessions)",
+            "prefs": "Product preferences"
+          }
+        },
+        "technical": {
+          "title": "2.4 Technical data",
+          "items": {
+            "ip": "IP address",
+            "browser": "Browser type and version",
+            "device": "Device type",
+            "cookies": "Cookies and similar technologies"
+          }
+        }
+      },
+      "use": {
+        "title": "3. How we use your data",
+        "service": {
+          "title": "Service delivery",
+          "b1": "→ Providing virtual fitting room services",
+          "b2": "→ Processing FiT sessions",
+          "b3": "→ Personalizing your experience",
+          "b4": "→ Managing your account"
+        },
+        "billing": {
+          "title": "Payment processing",
+          "b1": "→ Processing payments",
+          "b2": "→ Managing subscriptions",
+          "b3": "→ Sending invoices"
+        },
+        "communication": {
+          "title": "Communication",
+          "b1": "→ Sending confirmation emails",
+          "b2": "→ Service-related announcements",
+          "b3": "→ Password reset requests",
+          "b4": "→ Updates about FiT sessions"
+        },
+        "improve": {
+          "title": "Service improvement",
+          "b1": "→ Analyzing usage patterns",
+          "b2": "→ Improving technology",
+          "b3": "→ Developing new features",
+          "b4": "→ Optimizing user experience"
+        }
+      },
+      "security": {
+        "title": "5. Data storage and security",
+        "storage": {
+          "title": "Storage location",
+          "text": "Your data is stored on secure servers within the European Union via our partner Supabase."
+        },
+        "measures": {
+          "title": "Security measures",
+          "b1": "Data encryption",
+          "b2": "Secure authentication (JWT)",
+          "b3": "Regular security audits",
+          "b4": "HTTPS connections"
+        },
+        "retention": {
+          "title": "Retention period",
+          "account": { "label": "Account data:", "value": "As long as your account is active" },
+          "sessions": { "label": "FiT session data:", "value": "2 years after last session" },
+          "transactions": { "label": "Transaction data:", "value": "7 years (legal requirement)" }
+        }
+      },
+      "rights": {
+        "title": "7. Your rights under the GDPR",
+        "access": { "title": "Right of access", "text": "Request a copy of your personal data" },
+        "rectification": { "title": "Right to rectification", "text": "Correct inaccurate data" },
+        "erasure": { "title": "Right to erasure", "text": "Request deletion of your data" },
+        "portability": { "title": "Right to data portability", "text": "Receive data in machine-readable format" }
+      },
+      "deletion": {
+        "title": "Data Deletion Policy – FiT by Brendr",
+        "intro": "At FiT by Brendr we value privacy and transparency. Users can delete their account at any time and have their personal data erased.",
+        "how": {
+          "title": "How to delete your data",
+          "lead": "If you want to delete your FiT account, follow these steps:",
+          "steps": {
+            "s1": "1. Log in to your account",
+            "s2": "2. Go to /customer/profile",
+            "s3": "3. Scroll to the section \"Close account and delete data\"",
+            "s4": "4. Click the red button \"Close account and delete data\"",
+            "s5": "5. Confirm your choice in the pop-up"
+          },
+          "after": "✓ After confirmation: Your account will be closed immediately and you'll see the message: \"Your account has been closed and all your data has been deleted.\""
+        },
+        "what": {
+          "title": "What happens upon deletion",
+          "text": "When a user deletes their account, all personal data is permanently deleted or anonymized in accordance with the GDPR.",
+          "deletedTitle": "The following data will be deleted from our database:",
+          "deleted": {
+            "email": "Email address",
+            "password": "Password hash",
+            "name": "First and last name",
+            "photos": "Profile photos and ID photos",
+            "device": "Device ID and IP address",
+            "results": "All FiT results"
+          },
+          "supabaseText": "In addition, the user will be completely removed from the Supabase Authorization table. Non-personal data such as technical settings, language and country may be retained for internal statistics, but can no longer be traced back to an individual."
+        },
+        "irreversible": {
+          "title": "Irreversibility",
+          "text": "Deleting an account is final. After confirmation, FiT sessions, images and account information cannot be restored."
+        },
+        "support": {
+          "title": "Questions or support",
+          "textPrefix": "Do you have questions about data deletion or privacy? Contact us via"
+        }
+      },
+      "complaints": {
+        "title": "12. Contact and complaints",
+        "email": { "title": "Email" },
+        "phone": { "title": "Phone" },
+        "address": { "title": "Address" },
+        "authorityTitle": "File a complaint with the supervisory authority",
+        "authorityLead": "You have the right to lodge a complaint with the Dutch Data Protection Authority:",
+        "authority": {
+          "website": "Website:",
+          "phone": "Phone:",
+          "address": "PO Box 93374, 2509 AJ The Hague"
+        }
+      }
+    }
+  },
+  "contactButtons": {
+    "chat": "Chat with us",
+    "whatsapp": "WhatsApp us",
+    "call": "Call us"
+  },
+  "help": {
+    "hero": {
+      "title": "Frequently asked questions",
+      "subtitle": "Everything you need to know about FiT, from integration to privacy and pricing"
+    },
+    "seo": {
+      "title": "FAQ – FiT by Brendr | AI-powered virtual fitting room for webshops",
+      "description": "Discover everything about FiT, the AI-powered virtual fitting session for webshops. Learn how FiT works, how to integrate it, pricing, and how it increases your conversion."
+    },
+    "cta": {
+      "title": "Still have questions?",
+      "subtitle": "Can't find your question? Contact our team, we're happy to help!",
+      "primary": "Contact us",
+      "secondary": "See all features"
+    },
+    "faq": {
+      "categories": [
+        {
+          "title": "General",
+          "questions": [
+            { "q": "What is FiT?", "a": "FiT is an AI-powered virtual try-on experience that lets customers see themselves with your products. By uploading a single photo, they instantly experience how clothing, accessories or other items look on them, directly on your product page." },
+            { "q": "How does FiT work?", "a": "Customers upload a clear photo of themselves. Our AI combines that photo with the product image and generates a realistic result in seconds. This provides a personal try-on experience without leaving the store." },
+            { "q": "Who is FiT for?", "a": "FiT is designed for webshops and brands that want to offer a unique, interactive shopping experience. Whether you sell fashion, glasses, jewelry, sports items or even vehicles. FiT makes it personal." }
+          ]
+        },
+        {
+          "title": "Usage & integration",
+          "questions": [
+            { "q": "How do I integrate FiT into my webshop?", "a": "Very easily. Add a single line of code to your product pages and the FiT button will appear automatically. From there, customers can start their try-on immediately. No complex setup or technical knowledge required." },
+            { "q": "Does FiT work on all ecommerce platforms?", "a": "Yes. FiT is compatible with virtually any platform, including Shopify, WooCommerce, Magento and custom websites." },
+            { "q": "Can I adapt the look & feel to my brand?", "a": "Certainly. From the Premium plan you can hide the FiT logo in the results and with our Enterprise subscription you van even align colors and texts with your brand style." }
+          ]
+        },
+        {
+          "title": "AI & privacy",
+          "questions": [
+            { "q": "Are my photos stored or shared?", "a": "FiT treats all images with strict confidentiality. The photos you upload are temporarily processed to generate try-on images and then securely stored in your personal account within our protected database. If you’d like your photos to be removed, you can request permanent deletion at any time." },
+            { "q": "Are real people involved in the process?", "a": "No. Everything is fully automated by our AI models. There is no human intervention." },
+            { "q": "Is FiT GDPR-compliant?", "a": "Yes. We comply with European privacy legislation. All data is securely stored within the EU and can be completely deleted upon request." },
+            { "q": "How can I delete my account and erase all my data?", "a": "You can close your account via your profile page in the FiT app. Steps: 1) Go to /customer/profile 2) Scroll to 'Close account and delete data' 3) Click the red button 'Close account and delete data' 4) Confirm in the pop-up. Note: this is irreversible, previous FiT sessions and images will be permanently lost." }
+          ]
+        },
+        {
+          "title": "Results & performance",
+          "questions": [
+            { "q": "What does FiT deliver for my webshop?", "a": "FiT increases customer engagement, trust and conversion. Customers who see themselves with your products make purchase decisions faster and return less often." },
+            { "q": "How fast are images generated?", "a": "On average within 30 to 40 seconds. The underlying technology is evolving and we expect further speed improvements over time." },
+            { "q": "Can I measure results?", "a": "Yes, but insights vary per plan. Starter: counter of total FiT sessions with date range filter. Basic: everything from Starter + unique users + overview of last 4 sessions. Premium: everything from Basic + full session overview (user gender, items, date, PDP link). Enterprise: everything from Premium + conversion tracking (e.g., Google Analytics)." }
+          ]
+        },
+        {
+          "title": "Subscriptions & pricing",
+          "questions": [
+            { "q": "How much does FiT cost?", "a": "FiT offers different plans based on try-on sessions and features. There is a free Starter plan to test right away. See current plans on our pricing page." },
+            { "q": "What happens when I reach my limit?", "a": "You can easily add extra session bundles or upgrade to a higher plan. This way you remain in control of your costs." },
+            { "q": "Can I try FiT for free first?", "a": "Yes. With the Starter plan you can try FiT for free on one webshop and perform up to 50 try-on sessions per month." }
+          ]
+        },
+        {
+          "title": "Support & contact",
+          "questions": [
+            { "q": "Do you offer assistance with installation?", "a": "Yes. Our team is happy to help with the initial implementation and testing phase. You will also receive clear documentation and sample code." },
+            { "q": "I have a technical problem. How do I get help?", "a": "Via the FiT dashboard you can contact our support department directly. We usually respond within one business day." },
+            { "q": "How can I contact the FiT team?", "a": "Send an email to support@brendr.io or use the contact form on the website (/contact)." }
+          ]
+        },
+        {
+          "title": "Additional information",
+          "questions": [
+            { "q": "What makes FiT different from traditional virtual fitting rooms?", "a": "Many tools try to calculate sizes or build 3D models. FiT focuses on simplicity and experience; customers immediately see themselves with the product, without entering sizes or creating an avatar." },
+            { "q": "Does FiT only work for clothing?", "a": "No. FiT supports multiple categories such as fashion, shoes, jewelry, glasses, motorcycle helmets, bicycles and even car parts." }
+          ]
+        }
+      ]
+    }
+  },
+  "api": {
+    "hero": {
+      "title": "Integrate FiT into your webshop in minutes",
+      "subtitle": "Adding FiT is as simple as it sounds. Within a minute your customers can start their first virtual fitting session."
+    },
+    "quickStart": {
+      "title": "Get started even faster",
+      "subtitle": "We recommend starting with the free Starter plan to experience the integration and customer response.",
+      "primary": "View pricing and plans",
+      "secondary": "Start free now"
+    },
+    "support": {
+      "title": "Need help with the integration?",
+      "subtitle": "Our support team is happy to help you with the installation",
+      "contact": "Contact us"
+    },
+    "steps": {
+      "s1": {
+        "title": "Copy your personal widget code",
+        "desc": "In your FiT dashboard you’ll find your unique API key and Widget Code. Copy the full script line from the Widget Code field.",
+        "widgetCode": "Widget Code",
+        "copy": "Copy",
+        "copied": "Copied!",
+        "tipLabel": "Tip:",
+        "tipText": "This code contains your personal API key and makes the FiT button appear automatically on your product pages.",
+        "codeExample": "<script src=\"https://fit-production.up.railway.app/api/widget/bootstrap/[your_api_key]\" async></script>"
+      },
+      "s2": {
+        "title": "Paste the code into your webshop",
+        "p1": { "before": "Paste the script just above the closing", "after": "tag of your webshop, or on the product detail page where you want to show the FiT button." },
+        "p2": "Do you use a CMS or e-commerce platform like Shopify, WooCommerce or Magento? Then you can easily add the script via a \"Custom HTML\" or \"Theme code\" section in your editor.",
+        "cards": {
+          "shopify": { "title": "Shopify", "hint": "Theme code → theme.liquid" },
+          "woocommerce": { "title": "WooCommerce", "hint": "Appearance → Theme Editor" },
+          "magento": { "title": "Magento", "hint": "Content → Design → Configuration" }
+        }
+      },
+      "s3": {
+        "title": "Done!",
+        "desc": "Once you’ve added the script, the orange FiT button appears automatically on your product pages. Customers can start a fitting session instantly, no extra configuration or technical knowledge required.",
+        "cardTitle": "You’re ready to start!",
+        "cardText": "The FiT button is now live on your webshop and customers can start their first virtual fitting session right away."
+      },
+      "optional": {
+        "title": "Optional: Personalize your FiT experience",
+        "p1": "Want to align FiT branding with your brand? From the Premium plan you can hide the BrendR watermark in FiT results. With the Enterprise plan you can fully customize the FiT widget to match your brand, including your own logo and colors.",
+        "noteLabel": "Note:",
+        "noteText": "The FiT button itself has a fixed design to maintain recognizability and consistency."
+      }
+    }
+  },
+  
+  "retailerRegister": {
+    "title": "Create Retailer Account",
+    "subtitle": "Start using FiT today and boost your conversions",
+    "areYouConsumer": "Are you a consumer?",
+    "clickHereConsumerRegistration": "Click here for consumer registration",
+    "businessEmail": "Business email address",
+    "shopInfoTitle": "Shop information",
+    "shopName": "Shop name",
+    "shopNamePlaceholder": "My Fashion Store",
+    "websiteUrl": "Website URL",
+    "domainHint": "Enter only the domain, https:// is added automatically",
+    "shopCategory": "Shop category",
+    "selectCategory": "Select category",
+    "createRetailerAccount": "Create Retailer Account",
+    "registerWithGoogle": "Register with Google"
+  },
+  "modal": {
+    "welcomeTitle": "FiT your items",
+    "welcome": "Welcome to FiT!",
+    "welcomeSubtitle": "See and try every product, go for the right FiT!",
+    "ctaTry": "Try FiT",
+    "guest": "Continue without an account",
+    "continueAsGuest": "Continue as guest",
+    "categoryAlt": "Category"
+  },
+  "fit": {
+    "uploadYourPhoto": "Upload your photo",
+    "previewAlt": "Preview",
+    "clickToSelectAnother": "Click to select another photo",
+    "selectPhoto": "Select a photo",
+    "fileTypesLimit": "JPG, PNG up to 10MB",
+    "tipsTitle": "Tips for the best results:",
+    "tips": {
+      "uprightBackground": "Stand upright in front of a neutral background",
+      "goodLighting": "Ensure good lighting",
+      "wellFittingClothes": "Wear well-fitting clothing",
+      "lookAtCamera": "Look straight into the camera"
+    },
+    "uploading": "Uploading...",
+    "startSession": "Start FiT Session",
+    "aiWorking": "AI at work...",
+    "generatingPhoto": "We are generating your virtual ID photo. This takes about 30 seconds.",
+    "sessionIdLabel": "Session ID:",
+    "sessionComplete": "FiT Session Completed!",
+    "resultMessage": "Your virtual ID photo is ready. Register to view and save the result.",
+    "registerToView": "Register & View Result",
+    "selectPhotoFirst": "Please select a photo first",
+    "noProductsSelected": "No products selected",
+    "aiFailed": "AI processing failed. Please try again.",
+    "processingSlow": "Processing is taking longer than expected. Please check your account later."
+  },
+  "widget": {
+    "buttonTry": "See how it FiTs"
+  },
+  "cookie": {
+    "title": "We value your privacy",
+    "intro": "We use cookies and similar technologies so that FiT (our virtual fitting room and dashboard) works properly, and to measure performance and improve our service. You can choose which categories you allow. Essential cookies are required for the site to function.",
+    "manage": { "label": "Privacy preferences", "openAria": "Open privacy preferences" },
+    "categories": {
+      "necessary": { "title": "Essential", "desc": "Required for basic functionality such as login, sessions and security." },
+      "functional": { "title": "Functional", "desc": "Remembers preferences such as language and helps personalize the experience." },
+      "analytics": { "title": "Analytics", "desc": "Helps us understand how FiT is used (e.g., via Google Analytics/Tag Manager)." },
+      "marketing": { "title": "Marketing", "desc": "Used to show relevant campaigns or messages." }
+    },
+    "advanced": {
+      "textPrefix": "In our",
+      "privacy": "Privacy Policy",
+      "and": "and",
+      "terms": "Terms",
+      "textSuffix": "you can read more about how we and partners process data. You can change your choice later via",
+      "linkLocation": "the bottom-left link",
+      "items": {
+        "essential": "Essential: session management, security, error monitoring.",
+        "functional": "Functional: preferences, UI settings, language.",
+        "analytics": "Analytics: aggregated statistics, performance measurement.",
+        "marketing": "Marketing: optional messaging and campaigns."
+      }
+    },
+    "actions": {
+      "acceptNecessary": "Only necessary",
+      "options": "Options",
+      "hideOptions": "Hide options",
+      "acceptAll": "Accept all",
+      "save": "Save settings"
+    }
+  },
+  "errors": {
+    "generic": "An error occurred. Please try again."
+  },
+  "categories": {
+    "GENERAL": "General",
+    "FASHION": "Clothing & Fashion",
+    "BIKES": "Bicycles & E-bikes",
+    "SHOES": "Shoes & Footwear",
+    "MOTORS": "Motorcycles & Scooters",
+    "GLASSES": "Glasses & Sunglasses",
+    "JEWELRY": "Jewelry & Accessories",
+    "WATCHES": "Watches",
+    "AUTOMOTIVE": "Automotive",
+    "FURNITURE": "Furniture & Interior",
+    "BAGS": "Bags & Luggage"
+  },
+  "profileWidget": {
+    "title": "Profile completeness",
+    "progress": "Progress",
+    "excellent": "Excellent! Your profile is almost complete.",
+    "good": "Great! Just a few more fields to go.",
+    "ok": "You're on the right track. Fill in more details for better FiT results.",
+    "poor": "Your profile needs attention for the best FiT experience.",
+    "complete": "Your profile is complete! ",
+    "fillMore": "Fill {{count}} more fields",
+    "save": "Save Profile",
+    "saving": "Saving...",
+    "noChanges": "No changes"
+  },
+  "customer": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "profile": "My Profile",
+      "photos": "My Photos",
+      "sessions": "My FiT Sessions",
+      "partners": "Webshops",
+      "logout": "Log out"
+    },
+    "layout": {
+      "goToDashboardAria": "Go to dashboard",
+      "openNavigationAria": "Open navigation"
+    },
+    "status": {
+      "completed": "Completed",
+      "processing": "Processing",
+      "failed": "Failed",
+      "pending": "Pending",
+      "unknown": "Unknown"
+    },
+    "common": {
+      "unknownProduct": "Unknown product",
+      "unknownStore": "Unknown store",
+      "profilePhotoAlt": "Profile photo",
+      "back": "Back",
+      "view": "View",
+      "product": "Product",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "yesDelete": "Yes, delete",
+      "deleting": "Deleting...",
+      "loading": "Loading...",
+      "results": "{{count}} results",
+      "never": "Never",
+      "backToTop": "Back to top",
+      "backToTopAria": "Back to top",
+      "favoriteAdd": "Add to favorites",
+      "favoriteRemove": "Remove from favorites",
+      "save": "Save"
+    },
+    "dashboard": {
+      "welcome": "Welcome {{name}}!",
+      "subtitle": "Here's an overview of your FiT activity",
+      "stats": {
+        "total": "Total FiT Sessions",
+        "completed": "Completed Sessions",
+        "last": "Last Session"
+      },
+      "ratings": { "title": "Ratings" },
+      "recent": {
+        "title": "Recent FiT Sessions",
+        "subtitle": "Overview of your latest virtual fitting sessions",
+        "viewAll": "View all sessions"
+      },
+      "profile": {
+        "title": "Profile Status",
+        "subtitle": "Make sure your profile is complete for the best FiT experience.",
+        "button": "View Profile"
+      },
+      "newFit": {
+        "title": "New FiT Session",
+        "subtitle": "Start a new virtual fitting session at one of our partners.",
+        "button": "Find Partners"
+      }
+    },
+    "sessions": {
+      "title": "My FiT Sessions",
+      "subtitle": "Overview of all your virtual fitting sessions",
+      "badge": "{{count}} FiT sessions",
+      "filters": { "title": "Filters and sorting", "active": "{{count}} active" },
+      "search": { "placeholder": "Search sessions..." },
+      "filter": { "storeAll": "All stores", "categoryAll": "All categories" },
+      "sort": {
+        "label": "Sort:",
+        "date_desc": "Date: new → old",
+        "date_asc": "Date: old → new",
+        "store_asc": "Store: A → Z",
+        "store_desc": "Store: Z → A"
+      },
+      "view": { "label": "View:", "grid": "Grid", "list": "List" },
+      "no": {
+        "title": "No sessions found",
+        "empty": "You don't have any FiT sessions yet. Start your first session at one of our partners!",
+        "filtered": "No sessions match your filters."
+      },
+      "actions": { "view": "View", "product": "Product", "delete": "Delete" },
+      "confirmDelete": {
+        "title": "Are you sure you want to delete this session?",
+        "text": "The session will disappear from your overview. The data will be retained for training purposes.",
+        "cancel": "Cancel",
+        "confirm": "Yes, delete",
+        "deleting": "Deleting..."
+      },
+      "toast": {
+        "deleted": "Session deleted",
+        "deleteFailed": "Delete failed",
+        "favUpdateFailed": "Updating favorite failed",
+        "favoriteAdded": "Added to favorites",
+        "favoriteRemoved": "Removed from favorites"
+      },
+      "backToTop": { "aria": "Back to top", "label": "Back to top" },
+      "clearFilters": "Clear filters",
+      "favorites": "Favorites",
+      "favoritesTooltipOn": "Show all sessions",
+      "favoritesTooltipOff": "Favorites only",
+      "ratingFilter": {
+        "showAll": "Show all sessions",
+        "up": "Thumbs up only",
+        "down": "Thumbs down only",
+        "none": "Unrated only"
+      }
+    },
+    "sessionDetail": {
+      "back": "Back to sessions",
+      "resultTitle": "FiT Result",
+      "processing": "Your FiT is being processed...",
+      "failed": "An error occurred during processing",
+      "noResult": "No result available",
+      "details": { "title": "Session Details", "status": "Status", "category": "Category", "created": "Created", "completed": "Completed" },
+      "products": { "title": "Products ({{count}})", "addedAt": "Added on {{date}}", "view": "View" },
+      "retailer": { "title": "Webshop", "partner": "Partner store", "visit": "Visit store" },
+      "feedback": { "prompt": "What do you think of this result? Share your feedback below.", "label": "Feedback:", "good": "Good result", "bad": "Needs improvement", "infoTitle": "View note" },
+      "negative": { "title": "Tell us more", "question": "What could be improved about this FiT result?", "placeholder": "Your note...", "cancel": "Cancel", "send": "Send" },
+      "toast": {
+        "positiveSaved": "Thanks! Your positive feedback has been saved.",
+        "negativeSaved": "Thanks! Your feedback has been saved.",
+        "saveFailed": "Saving failed. Please try again.",
+        "explainMin": "Please provide a short explanation (min. 5 characters).",
+        "copied": "Image link copied to clipboard",
+        "shareFailed": "Sharing failed. Please try again.",
+        "noResult": "No result to share"
+      },
+      "shareText": "Hey, check this out! What do you think, is this a fit?",
+      "shareTitle": "My FiT Result",
+      "actions": {
+        "share": "Share",
+        "download": "Download",
+        "fullscreen": "Fullscreen"
+      }
+    },
+    "profile": {
+      "header": { "title": "My Profile", "subtitle": "Manage your personal data and settings." },
+      "personal": {
+        "title": "Personal Information",
+        "email": "Email (Username)",
+        "emailPlaceholder": "No email available",
+        "firstName": "First name",
+        "firstNamePlaceholder": "Your first name",
+        "lastName": "Last name",
+        "lastNamePlaceholder": "Your last name",
+        "dateOfBirth": "Date of birth",
+        "dateOfBirthTooltip": "Always useful for birthday wishes",
+        "gender": "Gender",
+        "genderSelect": "Select gender",
+        "genderMale": "Male",
+        "genderFemale": "Female",
+        "genderOther": "Prefer not to say",
+        "country": "Country",
+        "countryTooltip": "For local preferences and shipping",
+        "countryPlaceholder": "Netherlands",
+        "language": "Language",
+        "languageTooltip": "We show everything in your preferred language",
+        "languageNl": "Nederlands",
+        "languageEn": "English",
+        "languageDe": "Deutsch",
+        "languageFr": "Français"
+      },
+      "physical": { "title": "Physical Information", "height": "Height (cm)", "heightTooltip": "For accurate fit calculations", "weight": "Weight (kg)", "weightTooltip": "For accurate fit calculations" },
+      "password": { "title": "Password", "change": "Change Password", "cancel": "Cancel", "hidden": "Password hidden for security", "new": "New Password", "min8": "At least 8 characters", "confirm": "Confirm New Password" },
+      "delete": {
+        "title": "Close account and delete data",
+        "desc": "If you close your account, we delete all your personal data and FiT sessions. This cannot be undone.",
+        "button": "Close account and delete data",
+        "modalTitle": "Close account and delete data",
+        "modalDesc": "Are you sure you want to close your account? You will permanently lose all your FiT sessions and data. This cannot be restored.",
+        "cancel": "Cancel",
+        "confirm": "Yes, delete all my data"
+      },
+      "toast": {
+        "loadError": "Error loading your profile",
+        "saveSuccess": "Profile saved successfully!",
+        "saveError": "Error saving profile",
+        "passwordMismatch": "New password and confirmation do not match",
+        "passwordTooShort": "Password must be at least 8 characters long",
+        "passwordChangeSuccess": "Password changed successfully!",
+        "passwordChangeError": "Error changing password",
+        "accountDeleted": "Your account has been closed and all your data has been deleted"
+      }
+    },
+    "photos": {
+      "header": { "title": "My Photos", "subtitle": "Upload your photos for the best FiT experience. These photos are used to generate AI combinations with product photos." },
+      "sections": {
+        "front": { "title": "Front Photo", "desc": "Take a selfie or have someone take a photo of your face from the front." },
+        "side": { "title": "Side Photo", "desc": "Take a selfie or have someone take a photo of your face from the side." },
+        "fullbody_front": { "title": "Full Body Front", "desc": "Stand upright, arms at your sides, look at the camera" },
+        "fullbody_side": { "title": "Full Body Side", "desc": "Stand upright, arms at your sides, profile facing the camera" },
+        "family": { "title": "Family", "subtitle": "Optionally add photos for partner and family members." },
+        "spouse": { "title": "Partner", "desc": "Upload a clear front photo of your partner's face." },
+        "member1": { "title": "Family member 1", "desc": "Upload a clear front photo of family member 1." },
+        "member2": { "title": "Family member 2", "desc": "Upload a clear front photo of family member 2." },
+        "member3": { "title": "Family member 3", "desc": "Upload a clear front photo of family member 3." },
+        "member4": { "title": "Family member 4", "desc": "Upload a clear front photo of family member 4." },
+        "rooms": { "title": "Rooms", "subtitle": "Add a photo of a room." },
+        "room_1": { "title": "Room 1", "desc": "Upload a clear photo of the room." }
+      },
+      "tips": { "title": "Tips for the best photos", "t1": "Ensure good lighting, preferably natural light", "t2": "Use a neutral background (white or light colored)", "t3": "Wear well-fitting clothing that shows your body shape", "t4": "Stand upright and relaxed for the best results" },
+      "ui": {
+        "yourPhoto": "Your photo",
+        "exampleLabel": "Example photo",
+        "replace": "Replace",
+        "seeFull": "See full photo",
+        "uploading": "Uploading...",
+        "dragHereOr": "Drag photo here or",
+        "selectFile": "Select file",
+        "maxSize": "Max 2MB • JPG, PNG, GIF, WebP"
+      },
+      "toast": {
+        "loadProfileError": "Error loading profile",
+        "photoUploaded": "Photo uploaded successfully!",
+        "fileTooLarge": "File too large. Maximum size is 2MB",
+        "uploadError": "Error uploading photo",
+        "uploadGeneric": "An error occurred while uploading"
+      }
+    },
+    "partners": {
+      "back": "Back",
+      "title": "Find partners",
+      "filters": { "title": "Filters and sorting", "active": "active", "searchLabel": "Search by shop name", "placeholder": "e.g., ZooZoo", "category": "Category", "allCategories": "All categories", "sortBy": "Sort by", "nameAsc": "Shop name (A-Z)", "categoryAsc": "Category (A-Z)" },
+      "loading": "Loading...",
+      "error": "Could not load partners",
+      "results": "{{count}} results",
+      "visitShop": "Visit webshop"
+    },
+    "widget": {
+      "buttonTry": "Try with FiT"
+    }
+  },
+  "retailer": {
+    "nav": {
+      "back": "Back",
+      "dashboard": "Dashboard",
+      "webshops": "Webshops",
+      "settings": "Settings",
+      "subscription": "Subscription",
+      "logout": "Log out",
+      "welcome": "Welcome, {{name}}",
+      "starter": "Starter",
+      "basic": "Basic",
+      "premium": "Premium",
+      "enterprise": "Enterprise"
+    },
+    "subscription": {
+      "title": "Subscription",
+      "header": { "title": "Choose your plan", "subtitle": "Your current plan: {{plan}}" },
+      "billing": { "monthly": "Prices with monthly billing", "yearly": "Prices with yearly billing*", "note": "*After 12 months, cancellable monthly" },
+      "currency": "Currency:",
+      "currentBadge": "Your current plan",
+      "tabs": {
+        "abonnement": "Subscriptions",
+        "payments": "Invoices & Payments",
+        "credits": "Credits & top up"
+      },
+      "payments": {
+        "title": "Invoices & payments",
+        "subtitle": "View your recent invoices and manage your payment method via Stripe.",
+        "portal": "Open Stripe customer portal",
+        "table": {
+          "date": "Date",
+          "amount": "Amount",
+          "status": "Status",
+          "actions": "Actions",
+          "empty": "No invoices found.",
+          "downloadPdf": "Download PDF",
+          "viewOnline": "View online"
+        }
+      },
+      "credits": {
+        "title": "Credits & top up",
+        "subtitle": "View your current FiT credits and buy extra bundles as needed.",
+        "stats": {
+          "available": "Available",
+          "consumed": "Consumed",
+          "purchased": "Bundles (purchased)",
+          "included": "Included"
+        },
+        "buy": {
+          "title": "Buy extra bundle",
+          "description": "Buy extra FiTs for this month. The recommended bundle is chosen automatically based on your plan.",
+          "recommendedLabel": "Recommended",
+          "fits": "FiTs",
+          "price": "Price",
+          "button": "Buy extra bundle",
+          "note": "You will be redirected to Stripe checkout"
+        }
+      }
+    },
+    "dashboard": {
+      "title": "FiT Dashboard",
+      "filter": { "period": "Period:", "apply": "Apply", "reset": "Reset", "shop": "Webshop:", "total": "Total (all webshops)" },
+      "stats": { "totalSessions": "Total FiT Sessions", "uniqueUsers": "Unique users" },
+      "zero": {
+        "title": "Install the FiT widget on your webshop",
+        "desc": "Have you installed the FiT widget already? Without installation, your visitors cannot use FiT on your webshop. You can find your unique FiT code in your webshop settings.",
+        "cta": "View your webshops"
+      },
+      "recent": {
+        "title": "Recent FiT Sessions",
+        "subtitle": "Overview of the latest virtual fitting sessions",
+        "viewAll": "View all FiT sessions",
+        "onlyPremium": "Available from Premium",
+        "onlyPremiumTooltip": "Available from Premium"
+      },
+      "toasts": {
+        "apiKeyCopied": "API key copied",
+        "copyFailed": "Copy failed",
+        "widgetCopied": "Widget code copied"
+      }
+    },
+    "webshops": {
+      "title": "Webshops",
+      "subtitle": "Manage multiple webshops within your account. Each webshop has its own API key and domains.",
+      "toggle": { "open": "+ Add new webshop", "close": "Cancel" },
+      "create": {
+        "title": "New webshop",
+        "fields": {
+          "name": "Webshop name",
+          "namePlaceholder": "e.g., My Shop",
+          "category": "Category",
+          "language": "Language",
+          "url": "Website URL",
+          "urlPlaceholder": "myshop.com",
+          "active": "Active",
+          "domainAdd": "Add domain",
+          "domainPlaceholder": "https://shop.example",
+          "add": "Add"
+        },
+        "help": { "chooseCategory": "It is important to select the right category for your webshop. Each category is tailored and has unique characteristics that match the products in that category." },
+        "submit": "Create",
+        "submitting": "Creating..."
+      },
+      "loading": "Loading...",
+      "errorLoad": "Could not load webshops",
+      "status": { "active": "Active", "inactive": "Inactive" },
+      "noUrl": "No URL set",
+      "fields": {
+        "websiteUrl": "Website URL",
+        "domains": "Domains",
+        "domainsNone": "No domains set"
+      },
+      "actions": {
+        "edit": "Edit",
+        "save": "Save",
+        "cancel": "Cancel",
+        "rotateKey": "Rotate API Key",
+        "delete": "Delete",
+        "copyApiKey": "Copy API Key"
+      },
+      "toasts": {
+        "createUrlRequired": "Please enter a valid webshop URL",
+        "createUrlInvalid": "Enter a valid webshop URL, e.g. https://myshop.com",
+        "createSuccess": "Webshop created",
+        "createError": "Creation failed",
+        "limitReached": "Shop limit reached for current plan —",
+        "upgradeAccount": "Upgrade your account",
+        "editSuccess": "Changes saved",
+        "editError": "Save failed",
+        "brandingPremiumOnly": "Hide branding is only available for Premium/Enterprise —",
+        "rotateSuccess": "API key rotated",
+        "rotateError": "Rotation failed",
+        "deleteSuccess": "Webshop deleted",
+        "deleteError": "Delete failed",
+        "logoUploaded": "Logo uploaded",
+        "uploadError": "Upload failed"
+      },
+      "widget": {
+        "title": "FiT Widget",
+        "desc": "Add the FiT button to your webshop so customers can virtually try on products.",
+        "apiKey": "API Key",
+        "code": "Widget Code",
+        "copyCodeBtn": "Copy Widget Code",
+        "installation": "Installation:",
+        "installationNote": "Paste the script tag in the <head> section of your webshop. The FiT button appears automatically near add-to-cart buttons."
+      },
+      "logo": {
+        "title": "Webshop logo",
+        "hint": "Use a PNG or SVG with transparent background (max 2MB).",
+        "none": "No logo uploaded yet.",
+        "alt": "Webshop logo"
+      },
+      "branding": {
+        "title": "Hide branding",
+        "aria": "Hide branding",
+        "hideNote": "Hide FiT/BrendR logo in widget (Premium/Enterprise)",
+        "status": { "hidden": "Branding hidden", "visible": "Branding visible" }
+      },
+      "promo": {
+        "title": "Promo banner",
+        "ariaOn": "Promo on",
+        "onLabel": "Promo on",
+        "on": "Promo on",
+        "off": "Promo off",
+        "startOptional": "Start (optional)",
+        "endOptional": "End (optional)",
+        "start": "Start",
+        "end": "End",
+        "noPeriod": "No period set"
+      },
+      "colors": {
+        "titleEnterprise": "Widget colors (Enterprise)",
+        "gradientFrom": "Gradient From (.from-orange-500)",
+        "gradientTo": "Gradient To (.to-orange-600)",
+        "buttonBg": "Button background (.bg-orange-500)",
+        "buttonBorder": "Button border (.border-orange-500)",
+        "tileText": "Tile text (.text-orange-600)",
+        "tileBorder": "Tile border (.border-slate-200)",
+        "shadowColor": "Shadow color (.shadow-orange-500/30)",
+        "shadowPlaceholder": "#2bf9164d or rgba(43,249,22,0.3)",
+        "tip": "Tip: use 8-digit hex for transparency (e.g., #RRGGBBAA).",
+        "short": { "from": "From", "to": "To", "buttonBg": "Button BG", "buttonBorder": "Button border", "tileText": "Tile text", "tileBorder": "Tile border" },
+        "legendTitle": "Color legend",
+        "legendAlt": "Color legend"
+      },
+      "empty": { "title": "No webshops yet", "desc": "Add your first webshop to get started with FiT." },
+      "confirmDelete": { "title": "Delete webshop", "description": "Are you sure you want to delete this webshop? This action cannot be undone.", "cancel": "Cancel", "confirm": "Delete" },
+      "unsaved": { "title": "Unsaved changes", "description": "You have changes for this webshop that are not saved yet. Do you want to save them?", "cancel": "No", "confirm": "Yes, save" },
+      "aria": { "activeToggle": "Webshop active" }
+    },
+    "settings": {
+      "title": "FiT Settings",
+      "subscription": { "title": "Subscription", "youHave": "You currently have a", "adjust": "Adjust", "closeAccount": "Close account" },
+      "personal": {
+        "title": "Personal Information",
+        "firstName": "First name",
+        "lastName": "Last name",
+        "email": "Email address",
+        "emailNote": "Email address cannot be changed",
+        "firstNameError": "First name is required",
+        "lastNameError": "Last name is required",
+        "shopNameError": "Shop name is required",
+        "shopUrlError": "Website URL is required",
+        "shopUrlInvalid": "Enter a valid URL (e.g., myshop.com)"
+      },
+      "domain": {
+        "successMessage": "Domain updated successfully",
+        "domainError": "Domain is required",
+        "domainInvalid": "Enter a valid domain (e.g., myshop.com)",
+        "domainNameError": "Webshop name is required"
+      },
+      "promo": { "title": "Promo & Branding", "desc": "Promo banner and branding can now be managed per webshop.", "goToWebshops": "Go to Webshops to configure Branding hide toggle and Promo period per webshop." },
+      "password": {
+        "title": "Password",
+        "desc": "Change your password to keep your account secure.",
+        "change": "Change password",
+        "cancel": "Cancel",
+        "current": "Current password",
+        "new": "New password",
+        "confirm": "Confirm new password",
+        "changing": "Changing...",
+        "changeBtn": "Change password",
+        "currentPasswordError": "Current password is required",
+        "newPasswordError": "New password is required",
+        "newPasswordLengthError": "Password must be at least 8 characters",
+        "confirmPasswordError": "Passwords do not match",
+        "successMessage": "Password changed successfully",
+        "error": "An error occurred while changing the password"
+      },
+      "deleteModal": {
+        "title": "Close account",
+        "text": "Are you sure you want to close this account? All websites where FiT was active will no longer show the FiT button.",
+        "cancel": "Cancel",
+        "confirm": "Yes, close account"
+      },
+      "successMessage": "Profile updated successfully",
+      "generalError": "An error occurred"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "RAILPACK",
+    "buildCommand": "echo "VITE_API_URL=$VITE_API_URL" && rm -rf node_modules .npm _node_modules .cache && npm ci && npm run build"
+  },
+  "deploy": {
+    "startCommand": "npm run start --prefix src/client",
+    "healthcheckPath": "/health",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+  }
+}

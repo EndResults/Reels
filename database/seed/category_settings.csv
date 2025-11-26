@@ -1,0 +1,28 @@
+Categorie,SUpabase_key,Toegestaan aantal te combineren items (dus exclusief het betreffende item zelf),Aantal Stijlen (style),Nummer. Label stijlen,Welke pasPhoto laten we by default zien in de widget en zijn minimaal verplicht om de sessie te kunnen doen,pasPhotos meesturen in de Post naar n8n,Tekst infobox getoond in het widget op stap 2
+Kleding & Mode,FASHION,3,"2 [1,2]","1. Studio
+2. Echte wereld",pasPhoto_front,"pasPhoto_front, pasPhoto_fullbody_front",Voeg eventueel nog drie items toe om te zien hoe deze in combinatie met elkaar eruitzien. 
+Fietsen & E-bikes,BIKES,0,"2 [1,2]","1. Studio
+2. Echte wereld",pasPhoto_front,"pasPhoto_front, pasPhoto_fullbody_front","Leuk al die modellen, maar hoe ziet de fiets eruit als jij er zelf op zit?"
+Schoenen & Footwear,SHOES,2,"2 [1,2]","1. Studio
+2. Echte wereld",pasPhoto_fullbody_side,"pasPhoto_front, pasPhoto_side",Voeg eventueel nog twee items toe om te zien hoe deze in combinatie met deze schoenen eruitzien. 
+Motoren & Scooters,MOTORS,0,"2 [1,2]","1. Rijdend
+2. Stistaand","pasPhoto_front, pasPhoto_fullbody_side","pasPhoto_front, pasPhoto_fullbody_side","Leuk al die modellen, maar hoe ziet deze bike eruit als jij er zelf op zit?"
+Brillen & Zonnebrillen,GLASSES,1,"2 [1,2]","1. Close up
+2. volledige body shot",pasPhoto_front,"pasPhoto_front, pasPhoto_fullbody_front",Voeg eventueel nog een item toe om te zien hoe deze in combinatie met deze bril eruitzien. 
+Sieraden & Accessoires,JEWELRY,1,"3 [1,2,3]","1. Business
+2. Casual and natural
+3. Gala",pasPhoto_front,"pasPhoto_front, pasPhoto_fullbody_front",Voeg eventueel nog een item toe om te zien hoe deze in combinatie met het sieraad of accessoire eruitzien. 
+Horloges,WATCHES,1,"2 [1,2]","1. Business
+2. Casual and natural",pasPhoto_front,"pasPhoto_front, pasPhoto_fullbody_front",Voeg eventueel nog een item toe om te zien hoe deze in combinatie met het horloge eruitzien. 
+Automotive,AUTOMOTIVE,0,"4 [1,2,3,4]","1. Jij alleen naast de auto
+2. Jij alleen in de auto
+3. Jij en je spouse in de auto
+4. Jij en je gehele gezin naast de auto",pasPhoto_front,"(1) pasPhoto_front, pasPhoto_fullbody_front
+(2) pasPhoto_front, pasPhoto_fullbody_front
+(3) pasPhoto_front, pasPhoto_spouse
+(4) pasPhoto_front, pasPhoto_spouse, pasPhoto_member1, pasPhoto_member2, pasPhoto_member, pasPhoto_member4",Afhankelijk van je stijl keuze zullen we de pasfoto van je partner en of die de overige gezinsleden combineren in deze sessie. Zorg er dus voor dat je de juiste foto's hebt geupload in je FiT dashboard. 
+Meubels & Interieur,FURNITURE,3,"2 [1,2]","1. Daglicht
+2. Avond",pasPhoto_room_1,pasPhoto_room_1,"Voeg de items toe die je in je ruimte wilt zien. Mocht je nog geen afbeelding van je ruimte hebben toegevoegd in je FiT dashboard, voeg dan hier een foto toe van de betreffende ruimte."
+Tassen & Bagage,BAGS,2,"3 [1,2,3]","1. Business
+2. Casual and natural
+3. Gala","pasPhoto_side, pasPhoto_fullbody_side","pasPhoto_side, pasPhoto_fullbody_side",Voeg eventueel nog twee items toe om te zien hoe deze in combinatie met de tas eruitzien. 

@@ -1,0 +1,151 @@
+<!-- ===== FiT Modal: HTML ===== -->
+<div id="fit-modal-overlay" class="fit-modal__overlay" aria-hidden="true">
+  <div class="fit-modal" role="dialog" aria-modal="true" aria-labelledby="fit-modal-title" aria-describedby="fit-modal-desc">
+    <button class="fit-modal__close" aria-label="Sluiten" data-fit-close>&times;</button>
+
+    <header class="fit-modal__header">
+      <h2 id="fit-modal-title">FiT your items</h2>
+      <p id="fit-modal-desc" class="fit-modal__subtitle">Zie hoe dit item jou staat voordat je het koopt.</p>
+    </header>
+
+    <section class="fit-modal__benefits" aria-label="Voordelen FiT account">
+      <ul class="fit-list">
+        <li class="fit-list__item">
+          <svg class="fit-list__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.6-1.5 1.5L9 19.2 20 8.1 18.6 6.7z"/></svg>
+          Je passessies bewaren
+        </li>
+        <li class="fit-list__item">
+          <svg class="fit-list__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.6-1.5 1.5L9 19.2 20 8.1 18.6 6.7z"/></svg>
+          Meerdere items tegelijk passen
+        </li>
+        <li class="fit-list__item">
+          <svg class="fit-list__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2l-3.5-3.6-1.5 1.5L9 19.2 20 8.1 18.6 6.7z"/></svg>
+          Exclusieve kortingen ontvangen
+        </li>
+      </ul>
+    </section>
+
+    <div class="fit-modal__actions">
+      <!-- Primaire CTA -->
+      <a href="/signup" class="fit-btn fit-btn--primary" data-fit-primary>Maak gratis een FiT account aan</a>
+      <!-- Secondaire CTA -->
+      <a href="/login" class="fit-btn fit-btn--secondary">Heb je al een account? Log in</a>
+      <!-- Tertiaire link -->
+      <a href="#" class="fit-link" data-fit-guest>Doorgaan zonder account</a>
+      <p class="fit-note" role="note">Zonder account wordt je sessie niet opgeslagen.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FiT Modal: CSS ===== -->
+<style>
+  :root{
+    /* Branding – pas deze aan per retailer of plan */
+    --fit-color-primary:#2563eb;      /* knopkleur */
+    --fit-color-primary-hover:#1d4ed8;
+    --fit-color-text:#0f172a;          /* titel/tekst */
+    --fit-color-muted:#64748b;         /* subtitel/notes */
+    --fit-surface:#ffffff;             /* modal achtergrond */
+    --fit-shadow:0 20px 50px rgba(2,6,23,.18);
+    --fit-radius:16px;
+  }
+  .fit-modal__overlay{
+    position:fixed; inset:0; z-index:9999;
+    background:rgba(0,0,0,.45);
+    display:none; align-items:center; justify-content:center;
+    padding:24px;
+  }
+  .fit-modal__overlay[aria-hidden="false"]{display:flex;}
+  .fit-modal{
+    width:min(620px, 100%);
+    max-height:min(86vh, 900px);
+    overflow:auto;
+    background:var(--fit-surface);
+    color:var(--fit-color-text);
+    box-shadow:var(--fit-shadow);
+    border-radius:var(--fit-radius);
+    padding:28px 28px 22px;
+    position:relative;
+  }
+  .fit-modal__close{
+    position:absolute; top:10px; right:12px;
+    font-size:28px; line-height:1; border:0; background:none; cursor:pointer;
+    color:var(--fit-color-muted);
+  }
+  .fit-modal__close:hover{color:var(--fit-color-text);}
+  .fit-modal__header h2{margin:0 0 4px; font-size:22px; font-weight:800;}
+  .fit-modal__subtitle{margin:0 0 16px; color:var(--fit-color-muted);}
+
+  .fit-modal__benefits{
+    background:#f8fafc; border-radius:12px; padding:16px 18px; margin:0 0 18px;
+  }
+  .fit-list{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
+  .fit-list__item{display:flex; align-items:center; gap:10px; font-size:15px;}
+  .fit-list__icon{width:18px; height:18px; fill:var(--fit-color-primary); flex:0 0 18px;}
+
+  .fit-modal__actions{display:grid; gap:10px; margin-top:8px;}
+  .fit-btn{
+    display:inline-block; text-align:center; border-radius:12px;
+    padding:12px 16px; font-weight:700; text-decoration:none; transition:.15s ease;
+  }
+  .fit-btn--primary{background:var(--fit-color-primary); color:#fff;}
+  .fit-btn--primary:hover{background:var(--fit-color-primary-hover);}
+  .fit-btn--secondary{
+    background:#eef2ff; color:#1e293b; border:1px solid #c7d2fe;
+  }
+  .fit-btn--secondary:hover{filter:brightness(0.98);}
+  .fit-link{
+    text-align:center; display:inline-block; color:var(--fit-color-primary);
+    text-decoration:underline; font-weight:600; margin-top:6px;
+  }
+  .fit-note{text-align:center; color:var(--fit-color-muted); font-size:12px; margin:2px 0 0;}
+  @media (max-width:480px){
+    .fit-modal{padding:22px 18px;}
+    .fit-modal__header h2{font-size:20px;}
+  }
+</style>
+
+<!-- ===== FiT Modal: JS (open/close + focus trap) ===== -->
+<script>
+  const overlay = document.getElementById('fit-modal-overlay');
+  let lastFocused;
+
+  function openFitModal(){
+    lastFocused = document.activeElement;
+    overlay.setAttribute('aria-hidden', 'false');
+    // focus first interactive element
+    const first = overlay.querySelector('[data-fit-primary]') || overlay.querySelector('[data-fit-close]');
+    first && first.focus();
+    document.addEventListener('keydown', escToClose);
+    document.addEventListener('keydown', trapFocus);
+  }
+  function closeFitModal(){
+    overlay.setAttribute('aria-hidden', 'true');
+    document.removeEventListener('keydown', escToClose);
+    document.removeEventListener('keydown', trapFocus);
+    lastFocused && lastFocused.focus();
+  }
+  function escToClose(e){ if(e.key === 'Escape') closeFitModal(); }
+  function trapFocus(e){
+    if(overlay.getAttribute('aria-hidden') === 'true') return;
+    const focusables = overlay.querySelectorAll('a,button,[tabindex]:not([tabindex="-1"])');
+    if(!focusables.length) return;
+    const first = focusables[0], last = focusables[focusables.length - 1];
+    if(e.key === 'Tab'){
+      if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+      else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+    }
+  }
+  // wire close & guest
+  overlay.addEventListener('click', (e)=>{ if(e.target === overlay) closeFitModal(); });
+  overlay.querySelector('[data-fit-close]')?.addEventListener('click', closeFitModal);
+  overlay.querySelector('[data-fit-guest]')?.addEventListener('click', (e)=>{
+    e.preventDefault();
+    // TODO: start guest flow (upload pasfoto modal)
+    closeFitModal();
+  });
+
+  // Expose open function globally
+  window.openFitModal = openFitModal;
+  window.closeFitModal = closeFitModal;
+</script>
