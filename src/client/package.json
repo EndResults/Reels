@@ -47,7 +47,8 @@
         "build": "tsc && vite build",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview --host 0.0.0.0",
-        "start": "node server.js"
+        "start": "node server.js",
+        "postinstall": "rm -rf node_modules/.vite node_modules/.cache || true"
     },
     "browserslist": {
         "production": [

@@ -2,10 +2,10 @@
   "$schema": "https://railway.app/railway.schema.json",
   "build": {
     "builder": "RAILPACK",
-    "buildCommand": "npm install && npm run build"
+    "buildCommand": "npm install --prefix src/client && npm run build --prefix src/client"
   },
   "deploy": {
-    "startCommand": "npm run start",
+    "startCommand": "node src/client/server.js",
     "healthcheckPath": "/health",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
