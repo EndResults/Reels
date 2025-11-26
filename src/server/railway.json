@@ -2,7 +2,7 @@
   "$schema": "https://railway.app/railway.schema.json",
   "build": {
     "builder": "RAILPACK",
-    "buildCommand": "npm ci --prefix src/server && npm run build --prefix src/server"
+    "buildCommand": "npm install --prefix src/server && npm run build --prefix src/server"
   },
   "deploy": {
     "startCommand": "npm run start --prefix src/server",
@@ -11,5 +11,3 @@
     "healthcheckPath": "/health"
   }
 }
-
-
