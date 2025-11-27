@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const LANGS = ['nl', 'en'];
-const srcRoot = path.resolve(__dirname, '../../shared/locales');
+const srcRoot = path.resolve(__dirname, '../../src/shared/locales');
 const destRoot = path.resolve(__dirname, '../src/locales');
 
 function copyFileSafe(src, dest) {
