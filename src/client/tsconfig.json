@@ -18,14 +18,11 @@
     "allowImportingTsExtensions": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@shared/*": ["../shared/*"],
-      "@shared/locales/*": ["../shared/locales/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
-    "src",
-    "../shared/locales/**/*.json"
+    "src"
   ],
   "exclude": [
     "node_modules",
