@@ -1,9 +1,11 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import nlJSON from '@shared/locales/nl/common.json';
+import enJSON from '@shared/locales/en/common.json';
 
 // Shared JSON resources
-const nlCommon = { hello: 'Hallo' } as const;
-const enCommon = { hello: 'Hello' } as const;
+const nlCommon = nlJSON as const;
+const enCommon = enJSON as const;
 
 function normalizeLang(input?: string | null): 'nl' | 'en' {
   const v = (input || '').toLowerCase();
