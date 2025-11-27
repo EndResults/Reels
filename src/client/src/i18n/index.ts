@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import nlJSON from '../../../shared/locales/nl/common.json';
-import enJSON from '../../../shared/locales/en/common.json';
+import nlJSON from '@shared/locales/nl/common.json';
+import enJSON from '@shared/locales/en/common.json';
 
 // Shared JSON resources
 const nlCommon = nlJSON;
