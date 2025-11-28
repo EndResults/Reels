@@ -2,7 +2,24 @@
   "$schema": "https://railway.app/railway.schema.json",
   "build": {
     "builder": "RAILPACK",
-    "buildCommand": "npm install --prefix src/client && npm run build --prefix src/client"
+    "phases": {
+      "install": {
+        "commands": [
+          "npm install --prefix src/client",
+          "npm install --prefix src/server"
+        ]
+      },
+      "build": {
+        "includeFiles": [
+          "src/client/**",
+          "src/server/**",
+          "src/shared/**"
+        ],
+        "commands": [
+          "npm run build --prefix src/client"
+        ]
+      }
+    }
   },
   "deploy": {
     "startCommand": "node src/client/server.js",
