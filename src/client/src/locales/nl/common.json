@@ -1,0 +1,1617 @@
+{
+  "common": {
+    "ok": "OK",
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "close": "Sluiten",
+    "back": "Terug",
+    "next": "Volgende",
+    "loading": "Bezig...",
+    "or": "of",
+    "language": {
+      "label": "Taal",
+      "dutch": "Nederlands",
+      "english": "Engels"
+    }
+  },
+  "unsubscribeConfirm": {
+    "hero": {
+      "title": "Wil je je uitschrijven?",
+      "subtitle": "Je staat op het punt je uit te schrijven voor marketing- en update-e-mails voor FiT by Brendr."
+    },
+    "body": {
+      "heading": "Bevestig je uitschrijving",
+      "intro": "Via deze link kun je je veilig uitschrijven voor marketing- en update-e-mails.",
+      "description": "Het onderstaande e-mailadres wordt afgemeld voor nieuws, acties en productupdates rondom FiT by Brendr.",
+      "emailLabel": "E-mailadres"
+    },
+    "actions": {
+      "confirm": "Ja, uitschrijven",
+      "submitting": "Bezig met uitschrijven...",
+      "pleaseWait": "Een moment geduld terwijl we je uitschrijving verwerken."
+    },
+    "error": {
+      "title": "Link ongeldig of onvolledig",
+      "missingParams": "We kunnen deze uitschrijving niet voltooien omdat de link onvolledig is. Probeer opnieuw via de meest recente e-mail of neem contact met ons op als het probleem blijft."
+    }
+  },
+  "cookie": {
+    "title": "Wij waarderen je privacy",
+    "intro": "We gebruiken cookies en vergelijkbare technologieën zodat FiT (onze virtuele paskamer en het dashboard) goed werkt en om prestaties te meten en onze dienst te verbeteren. Je kunt zelf kiezen welke categorieën je toestaat. Essentiële cookies zijn nodig om de site te laten functioneren.",
+    "manage": { "label": "Privacyvoorkeuren", "openAria": "Open privacyvoorkeuren" },
+    "categories": {
+      "necessary": { "title": "Essentieel", "desc": "Noodzakelijk voor basisfunctionaliteit zoals inloggen, sessies en beveiliging." },
+      "functional": { "title": "Functioneel", "desc": "Onthoudt voorkeuren zoals taal en helpt de ervaring te personaliseren." },
+      "analytics": { "title": "Analytics", "desc": "Helpt ons het gebruik van FiT te begrijpen (bv. via Google Analytics/Tag Manager)." },
+      "marketing": { "title": "Marketing", "desc": "Wordt gebruikt om relevante campagnes of berichten te tonen." }
+    },
+    "advanced": {
+      "textPrefix": "In onze",
+      "privacy": "Privacyverklaring",
+      "and": "en",
+      "terms": "Voorwaarden",
+      "textSuffix": "lees je meer over hoe wij en eventuele partners data verwerken. Je keuze kun je later altijd wijzigen via",
+      "linkLocation": "de link linksonder",
+      "items": {
+        "essential": "Essentieel: sessiebeheer, beveiliging, foutmonitoring.",
+        "functional": "Functioneel: voorkeuren, UI-instellingen, taal.",
+        "analytics": "Analytics: geaggregeerde statistieken, prestatiemeting.",
+        "marketing": "Marketing: optionele messaging en campagnes."
+      }
+    },
+    "actions": {
+      "acceptNecessary": "Alleen noodzakelijke",
+      "options": "Opties",
+      "hideOptions": "Verberg opties",
+      "acceptAll": "Alles accepteren",
+      "save": "Instellingen opslaan"
+    }
+  },
+  "profileWidget": {
+    "title": "Profiel Volledigheid",
+    "progress": "Voortgang",
+    "excellent": "Uitstekend! Je profiel is bijna compleet.",
+    "good": "Goed bezig! Nog een paar velden te gaan.",
+    "ok": "Je bent op de goede weg. Vul meer gegevens in voor betere FiT resultaten.",
+    "poor": "Je profiel heeft nog veel aandacht nodig voor optimale FiT ervaring.",
+    "complete": "Je profiel is compleet! 🎉",
+    "fillMore": "Vul nog {{count}} velden aan",
+    "save": "Profiel Opslaan",
+    "saving": "Opslaan...",
+    "noChanges": "Geen Wijzigingen"
+  },
+  "retailerRegister": {
+    "title": "Retailer Account Aanmaken",
+    "subtitle": "Start vandaag nog met FiT en verhoog je conversie",
+    "areYouConsumer": "Ben je een consument?",
+    "clickHereConsumerRegistration": "Klik hier voor consumer registratie",
+    "businessEmail": "Zakelijk email adres",
+    "shopInfoTitle": "Webshop informatie",
+    "shopName": "Webshop naam",
+    "shopNamePlaceholder": "Mijn Fashion Store",
+    "websiteUrl": "Website URL",
+    "domainHint": "Voer alleen het domein in, https:// wordt automatisch toegevoegd",
+    "shopCategory": "Webshop categorie",
+    "selectCategory": "Selecteer categorie",
+    "createRetailerAccount": "Retailer Account Aanmaken",
+    "registerWithGoogle": "Registreren met Google"
+  },
+  "consumerRegister": {
+    "title": "Consumer Account Aanmaken",
+    "subtitle": "Bekijk hoe producten jou écht staan met FiT’s virtuele AI-paskamer",
+    "areYouRetailer": "Ben je een retailer?",
+    "clickHereRetailerRegistration": "Klik hier voor retailer registratie",
+    "benefitTitle": "Gratis virtuele AI-paskamer",
+    "benefitText": "Zie direct hoe kleding en producten jou staan",
+    "featuresTitle": "Wat kun je met FiT?",
+    "features": {
+      "uploadPhoto": "Upload een foto en zie hoe producten in jouw situatie eruitzien",
+      "tryClothes": "Probeer kleding, sieraden, horloges, brillen & meer virtueel",
+      "lessReturns": "Minder retouren, betere keuzes en meer winkelplezier",
+      "worksAllShops": "Werkt op alle aangesloten webshops"
+    },
+    "newsletterOptIn": "Houd me op de hoogte van nieuwe features en tips",
+    "createFreeAccount": "Gratis Account Aanmaken",
+    "registerWithGoogle": "Registreren met Google",
+    "registerWithFacebook": "Registreren met Facebook"
+  },
+  "legal": {
+    "agreePrefix": "Ik ga akkoord met de",
+    "terms": "algemene voorwaarden",
+    "and": "en",
+    "privacy": "privacybeleid"
+  },
+  "auth": {
+    "login": "Inloggen",
+    "register": "Registreren",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "passwordPlaceholder": "Minimaal 8 karakters",
+    "loggingIn": "Bezig met inloggen...",
+    "noAccountRegister": "Nog geen account? Registreer hier",
+    "createAccount": "Account aanmaken",
+    "creatingAccount": "Account wordt aangemaakt...",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "confirmPassword": "Bevestig wachtwoord",
+    "rememberMe": "Onthoud mij",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "loginOnDashboard": "Inloggen op Dashboard",
+    "loginWithGoogle": "Inloggen met Google",
+    "loginWithFacebook": "Inloggen met Facebook",
+    "loginErrorGeneric": "Er is een fout opgetreden bij het inloggen",
+    "emailPlaceholder": "sarah@example.com",
+    "emailPlaceholderShop": "je@webshop.nl",
+    "passwordHelp": "Minimaal 8 karakters",
+    "passwordHelpStrong": "Minimaal 8 karakters met letters en cijfers",
+    "loginSuccess": "Login succesvol! FiT sessie wordt gestart...",
+    "loginFailed": "Login mislukt. Probeer opnieuw.",
+    "registerSuccess": "Account succesvol aangemaakt! FiT sessie wordt gestart...",
+    "registerFailed": "Registratie mislukt. Probeer opnieuw.",
+    "passwordMismatch": "Wachtwoorden komen niet overeen",
+    "hasAccountLogin": "Al een account? Log hier in",
+    "haveAccountQuestion": "Heb je al een account?",
+    "loginHere": "Log hier in",
+    "confirmPasswordPlaceholder": "Herhaal je wachtwoord"
+  },
+  "retailerLogin": {
+    "title": "Retailer Inloggen",
+    "subtitle": "Toegang tot je FiT dashboard en analytics",
+    "areYouConsumer": "Ben je een consument?",
+    "clickHereConsumerLogin": "Klik hier voor consumer login",
+    "dashboardPreviewTitle": "Je dashboard bevat:",
+    "bannerTitle": "Retailer Dashboard",
+    "bannerText": "Bekijk analytics, beheer je plan en integreer FiT",
+    "features": {
+      "analytics": "Real-time FiT sessie analytics",
+      "returns": "Conversie en retour statistieken",
+      "widgetTools": "Widget integratie tools",
+      "planBilling": "Plan beheer en facturatie"
+    },
+    "noRetailerAccount": "Nog geen retailer account?",
+    "registerYourShop": "Registreer je webshop"
+  },
+  "consumerLogin": {
+    "title": "Consumer Inloggen",
+    "subtitle": "Toegang tot je virtuele paskamer en profiel",
+    "areYouRetailer": "Ben je een retailer?",
+    "clickHereRetailerLogin": "Klik hier voor retailer login",
+    "profilePreviewTitle": "Je FiT Profiel",
+    "profilePreviewText": "Toegang tot je metingen en virtuele paskamer",
+    "profileContentsTitle": "In je profiel vind je:",
+    "contents": {
+      "savedMeasurements": "Je opgeslagen lichaamsmaten",
+      "sessionsHistory": "Geschiedenis van FiT sessies",
+      "favoriteItems": "Favoriete items en webshops",
+      "personalSizeAdvice": "Persoonlijke maatadvies"
+    },
+    "noAccount": "Nog geen account?",
+    "registerFreeAccount": "Maak gratis een account aan",
+    "tipNoAccountUse": "💡 Tip: Je kunt FiT ook gebruiken zonder account bij aangesloten webshops"
+  },
+  "verify": {
+    "headlineFail": "Verificatie mislukt",
+    "headlineSuccess": "E-mailadres bevestigd",
+    "subFailGeneric": "We konden je e-mailadres niet bevestigen. Probeer het opnieuw of vraag een nieuwe verificatie e-mail aan.",
+    "subRecoverySuccess": "Je wachtwoord is succesvol gewijzigd. Je kunt nu inloggen.",
+    "subSuccessDefault": "Bedankt! Je e-mailadres is bevestigd. Je kunt nu inloggen.",
+    "toLogin": "Naar inloggen",
+    "toHome": "Terug naar home",
+    "noMailPrefix": "Geen mail ontvangen? Verstuur de verificatie opnieuw:",
+    "emailPlaceholder": "jij@email.com",
+    "resending": "Versturen…",
+    "resend": "Verstuur opnieuw",
+    "invalidEmail": "Vul een geldig e-mailadres in",
+    "resendSuccess": "Verificatie e-mail is opnieuw verstuurd. Controleer je inbox.",
+    "resendFail": "Versturen mislukt"
+  },
+  "modal": {
+    "welcomeTitle": "FiT your items",
+    "welcome": "Welkom bij FiT!",
+    "welcomeSubtitle": "Zie en probeer elk product, ga voor de juiste FiT!",
+    "ctaTry": "Probeer FiT",
+    "guest": "Doorgaan zonder account",
+    "continueAsGuest": "Doorgaan als gast",
+    "categoryAlt": "Categorie"
+  },
+  "errors": {
+    "generic": "Er is een fout opgetreden. Probeer opnieuw."
+  },
+  "homepage": {
+    "hero": {
+      "titleStart": "De virtuele paskamer voor",
+      "titleEm": "elke webshop",
+      "subtitle": "Met FiT wordt elke klant het model. Laat bezoekers zichzelf zien met jouw producten, direct op de productpagina.",
+      "ctaPrimary": "Start nu gratis",
+      "ctaSecondary": "Zie alle features"
+    },
+    "stats": {
+      "conversion": "Meer conversie",
+      "conversionTooltip": "Case studies rapporteren conversiestijgingen van 20–30% bij retailers die fit-technologie inzetten.",
+      "returns": "Minder retouren",
+      "returnsTooltip": "Onderzoek laat zien dat sizing & fit-technologie retouren aanzienlijk kan verminderen.",
+      "fit": "FiT",
+      "fitTooltip": "Altijd de juiste fitervaring voor jouw klanten."
+    },
+    "featuresSection": {
+      "title": "Waarom kiezen voor FiT?",
+      "subtitle": "FiT integreert naadloos in elke webshop en helpt klanten het product te vinden dat écht past bij hun stijl, situatie en voorkeur."
+    },
+    "integrate": {
+      "title": "Makkelijk te integreren",
+      "desc": "Voeg onze FiT-knop toe aan je productpagina's met slechts één regel code. Geen complexe installatie of technische kennis vereist."
+    },
+    "ai": {
+      "title": "AI-gedreven paservaring",
+      "desc": "FiT genereert realistische visualisaties waarmee klanten jouw producten direct in hun eigen wereld zien, of het nu gaat om kleding die ze dragen, meubels in hun woonkamer, of accessoires in hun omgeving."
+    },
+    "cta": {
+      "title": "Klaar om FiT te proberen?",
+      "subtitle": "Start gratis en ervaar hoe eenvoudig het is om je webshop te verrijken met een virtuele passessie. Integreer FiT vandaag nog en zie je conversies groeien.",
+      "cta": "Start nu"
+    },
+    "alt": {
+      "hero": "FiT hero visual",
+      "integrationBike": "Voorbeeld integratie - BIKE categorie",
+      "aiAdvice": "AI-gedreven maatadvies voorbeeld"
+    }
+  },
+  "features": {
+    "hero": {
+      "title": "Kies het abonnement dat bij je past",
+      "subtitle": "Met FiT maak je van iedere productpagina een persoonlijke online paskamer. Onze pakketten groeien met je mee, van starter tot enterprise."
+    },
+    "compare": {
+      "title": "Vergelijk alle features",
+      "subtitle": "Een volledig overzicht van wat elk pakket biedt",
+      "table": {
+        "feature": "Functie",
+        "starter": "Starter",
+        "basic": "Basic",
+        "premium": "Premium",
+        "enterprise": "Enterprise",
+        "rows": {
+          "fittingRoom": "Online paskamer",
+          "insights": "Inzichten",
+          "shops": "Webshops",
+          "fitsPerMonth": "FiTs per maand",
+          "branding": "Branding",
+          "support": "Support",
+          "customIntegration": "Custom integratie",
+          "customAnalytics": "Custom analytics",
+          "sessionsCount": "Aantal sessies",
+          "visitorInsights": "Bezoekersinzichten",
+          "dash": "—",
+          "detailed": "Gedetailleerd",
+          "brendr": "BrendR",
+          "toggleable": "Uitschakelbaar",
+          "custom": "Custom",
+          "standard": "Standaard",
+          "twentyfourSeven": "24/7",
+          "sla": "SLA"
+        }
+      }
+    },
+    "info": {
+      "title": "Belangrijke informatie",
+      "billing": {
+        "title": "Facturatie",
+        "text": "De actuele prijzen worden weergegeven in de prijswidget op deze pagina. Na 12 maanden is je abonnement maandelijks opzegbaar. Betaling verloopt veilig via Stripe."
+      },
+      "fitting": {
+        "title": "Online paskamer",
+        "text": "Elke webshop krijgt een unieke API-key. Alle pakketten bevatten dezelfde krachtige FiT-widget met integratie op productpagina's."
+      },
+      "branding": {
+        "title": "Branding",
+        "text": "Vanaf Premium kun je het BrendR-logo uitschakelen. Enterprise-klanten krijgen volledig custom branding met kleuren, logo en UI-aanpassingen."
+      },
+      "insightsPerPlan": "Inzichten per pakket",
+      "table": {
+        "headers": { "plan": "Pakket", "available": "Beschikbare inzichten" },
+        "rows": {
+          "starter": "Basis teller van FiT-sessies met datumbereikfilter",
+          "basic": "Unieke gebruikers + overzicht van laatste 4 sessies",
+          "premium": "Volledig sessie-overzicht (geslacht, items, datum, PDP-link)",
+          "enterprise": "Inclusief conversietracking (Google Analytics, etc.)"
+        }
+      }
+    },
+    "categoriesHero": {
+      "title": "Voor elke categorie een perfecte FiT",
+      "subtitle1": "Of je nu mode verkoopt, fietsen aanbiedt of autoaccessoires presenteert, FiT past zich aan aan jouw type webshop.",
+      "subtitle2": "Ontdek hieronder hoe FiT in elke categorie zijn magie laat werken 👇"
+    },
+    "categoriesAccordion": {
+      "FASHION": {
+        "title": "Kleding & Mode",
+        "description": "Laat klanten zien hoe jouw kleding hen echt staat, van casual tot chic.",
+        "specs": {
+          "itemsPerOutfit": { "label": "Items per outfit", "value": "Meerdere kledingstukken combineerbaar" },
+          "studioStyle": { "label": "Studio-stijl", "value": "Neutrale achtergrond en perfecte belichting" },
+          "realWorldStyle": { "label": "Echte wereld-stijl", "value": "Natuurlijke setting zoals kantoor, café of buiten" }
+        }
+      },
+      "BIKES": {
+        "title": "Fietsen & E-bikes",
+        "description": "Laat bezoekers zich zien op hun nieuwe fiets, in beweging of in stijl.",
+        "specs": {
+          "itemsPerUse": { "label": "Items per gebruik", "value": "1 fiets per gebruiker" },
+          "studioStyle": { "label": "Studio-stijl", "value": "Stabiele pose met neutrale achtergrond" },
+          "realWorldStyle": { "label": "Echte wereld-stijl", "value": "Buitenomgeving zoals park of straat" }
+        }
+      },
+      "AUTOMOTIVE": {
+        "title": "Automotive",
+        "description": "Ideaal voor accessoires, bekleding of interieurproducten.",
+        "specs": {
+          "itemsPerUse": { "label": "Items per gebruik", "value": "1 voertuig of accessoire" },
+          "inCarStyle": { "label": "In de auto-stijl", "value": "Realistische foto achter het stuur of in het interieur" }
+        }
+      },
+      "JEWELRY": {
+        "title": "Sieraden & Accessoires",
+        "description": "Laat sieraden schitteren in natuurlijke belichting en met realistische huidtinten.",
+        "specs": {
+          "itemsPerLook": { "label": "Items per look", "value": "Meerdere accessoires combineerbaar" },
+          "studioStyle": { "label": "Studio-stijl", "value": "Close-ups met zachte belichting" },
+          "lifestyleStyle": { "label": "Lifestyle-stijl", "value": "Natuurlijke situaties met menselijke warmte" }
+        }
+      },
+      "SHOES": {
+        "title": "Schoenen & Footwear",
+        "description": "Van sneakers tot laarzen: FiT brengt jouw collectie letterlijk in beweging.",
+        "specs": {
+          "itemsPerSession": { "label": "Items per sessie", "value": "1 paar" },
+          "studioStyle": { "label": "Studio-stijl", "value": "Neutrale opnames met focus op vorm" },
+          "realWorldStyle": { "label": "Echte wereld-stijl", "value": "Buitenlocaties zoals stoep, pad of winkelvloer" }
+        }
+      },
+      "MOTORS": {
+        "title": "Motoren & Scooters",
+        "description": "Laat klanten hun nieuwe helm, jas of motoraccessoire ervaren alsof ze al rijden.",
+        "specs": {
+          "itemsPerUse": { "label": "Items per gebruik", "value": "1 motor of outfit" },
+          "studioStyle": { "label": "Studio-stijl", "value": "Motor in stabiele pose" },
+          "outdoorRideStyle": { "label": "Outdoor ride-stijl", "value": "Straat, bergweg of parkeerlocatie" }
+        }
+      },
+      "GLASSES": {
+        "title": "Brillen & Zonnebrillen",
+        "description": "Toon direct hoe een montuur past bij gezichtsvorm en stijl.",
+        "specs": {
+          "itemsPerSession": { "label": "Items per sessie", "value": "1 bril" },
+          "studioStyle": { "label": "Studio-stijl", "value": "Close-up met neutrale achtergrond" },
+          "lifestyleStyle": { "label": "Lifestyle-stijl", "value": "Buitenlocaties met zonlicht of reflectie" }
+        }
+      },
+      "WATCHES": {
+        "title": "Horloges",
+        "description": "Laat klanten ervaren hoe jouw horloge hun pols complementeert.",
+        "specs": {
+          "itemsPerSession": { "label": "Items per sessie", "value": "1 horloge" },
+          "studioStyle": { "label": "Studio-stijl", "value": "Macro-focus op pols en details" },
+          "lifestyleStyle": { "label": "Lifestyle-stijl", "value": "Context zoals bureau, stuur of handeling" }
+        }
+      },
+      "BAGS": {
+        "title": "Tassen & Bagage",
+        "description": "Van handtas tot koffer, FiT toont de juiste proporties en draagstijl.",
+        "specs": {
+          "itemsPerUse": { "label": "Items per gebruik", "value": "1 tas of set" },
+          "studioStyle": { "label": "Studio-stijl", "value": "Duidelijke front- en zijaanzichten" },
+          "realWorldStyle": { "label": "Echte wereld-stijl", "value": "Dagelijkse situaties zoals reizen of winkelen" }
+        }
+      },
+      "FURNITURE": {
+        "title": "Meubels & Interieur",
+        "description": "Laat klanten visualiseren hoe jouw meubels in hun ruimte passen.",
+        "specs": {
+          "itemsPerScene": { "label": "Items per scène", "value": "Meerdere meubels combineerbaar" },
+          "studioStyle": { "label": "Studio-stijl", "value": "Product op egale achtergrond" },
+          "inHomeStyle": { "label": "In huis-stijl", "value": "Realistische woonkamer, slaapkamer of kantooromgeving" }
+        }
+      }
+    },
+    "cta": {
+      "title": "Klaar om te beginnen?",
+      "subtitle": "Start je gratis trial en revolutioneer je online shopping-ervaring. Implementeer FiT vandaag nog en zie de conversies stijgen.",
+      "primary": "Start nu gratis",
+      "secondary": "Neem contact op"
+    }
+  },
+  "pricing": {
+    "header": { "title": "Kies je plan", "subtitle": "Start vandaag nog met FiT en verhoog je conversie" },
+    "billing": { "monthly": "Prijzen bij maandelijkse facturatie", "yearly": "Prijzen bij facturatie per jaar*" },
+    "note": "*Na 12 maanden elke maand opzegbaar",
+    "currency": "Valuta:",
+    "perMonth": "/maand",
+    "popular": "Populair",
+    "customPrice": "Op maat",
+    "buttons": {
+      "startFree": "Start gratis",
+      "loading": "Laden…",
+      "active": "Actief",
+      "downgradeSoon": "Downgraden",
+      "upgrade": "Stap over",
+      "contact": "Contact"
+    },
+    "list": {
+      "fittingRoom": "Online paskamer",
+      "shopsOne": "1 webshop",
+      "shopsThree": "3 webshops",
+      "shopsTwelve": "12 webshops",
+      "shopsInfinite": "∞ webshops",
+      "fits100": "50 FiTs (p/m)",
+      "fits1000": "500 FiTs (p/m)",
+      "fits5000": "2.500 FiTs (p/m)",
+      "fitsGT5000": "> 2.500 FiTs (p/m)",
+      "insightsVisitors": "Bezoekers inzichten",
+      "insightsCounts": "Bezoekers aantallen",
+      "supportBasic": "Basic support",
+      "support247": "24/7 support",
+      "brandingHideBrendr": "Verberg BrendR®",
+      "analytics": "Analytics",
+      "customBranding": "Custom branding",
+      "customIntegration": "Custom integratie",
+      "accountManager": "Account manager",
+      "sla": "SLA garantie"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Heb je vragen? Laten we praten!",
+      "subtitle": "Ons team staat klaar om je te helpen. Neem contact op en ontdek hoe FiT jouw webshop kan transformeren."
+    },
+    "sidebar": {
+      "title": "Contact informatie",
+      "subtitle": "Vul het formulier in of neem direct contact met ons op. We reageren binnen 24 uur.",
+      "emailUs": "Email ons",
+      "callUs": "Bel ons",
+      "visitUs": "Bezoek ons",
+      "officeHours": "Ma-Vr van 9:00 tot 17:00"
+    },
+    "form": {
+      "title": "Stuur ons een bericht",
+      "subtitle": "Vertel ons meer over jezelf en wat je in gedachten hebt.",
+      "nameLabel": "Jouw naam",
+      "namePlaceholder": "Naam",
+      "emailLabel": "Email adres",
+      "emailPlaceholder": "jij@voorbeeld.nl",
+      "messageLabel": "Vertel ons over je project",
+      "messagePlaceholder": "Waar kunnen we je mee helpen?",
+      "sending": "Verzenden...",
+      "send": "Verstuur bericht",
+      "success": "Bedankt! Je bericht is verzonden. We nemen zo snel mogelijk contact op.",
+      "failGeneric": "Er ging iets mis bij het versturen.",
+      "fail": "Versturen mislukt. Probeer het later opnieuw."
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "subtitle": "Heb je een vraag? Kijk eerst bij onze FAQ of neem direct contact op.",
+      "cards": {
+        "quick": { "title": "Snelle respons", "text": "We reageren binnen 24 uur op alle berichten" },
+        "phone": { "title": "Telefonisch contact", "text": "Bel ons voor directe hulp tijdens kantooruren" },
+        "email": { "title": "Email support", "text": "Stuur een email voor gedetailleerde vragen" }
+      }
+    }
+  },
+  "contactButtons": {
+    "chat": "Chat met ons",
+    "whatsapp": "WhatsApp ons",
+    "call": "Bel ons"
+  },
+  "demo": {
+    "hero": {
+      "title": "FiT Demo",
+      "subtitle": "Bekijk hoe FiT werkt met een korte demo!"
+    }
+  },
+  "about": {
+    "hero": { "title": "Over BrendR" },
+    "content": {
+      "p1": "BrendR is onderdeel van EndResults en richt zich als digital agency op het ontwikkelen van slimme, schaalbare oplossingen voor e-commerce bedrijven.",
+      "p2": "Onze kracht ligt in het combineren van AI en automatisering om processen te versnellen en klantbeleving te verbeteren.",
+      "p3": "BrendR werd in 2025 opgericht door Clinton End, die met bijna tien jaar ervaring als Product Owner en E-commerce Manager tientallen projecten heeft begeleid in sectoren als retail, fashion en technologie. Zijn missie: digitale groei toegankelijk en duurzaam maken voor elke ondernemer.",
+      "learnMore": "Meer over EndResults:",
+      "learnMoreLinkLabel": "endresults.nl"
+    },
+    "cta": {
+      "title": "Vragen of samenwerken?",
+      "subtitle": "Neem contact op, we denken graag met je mee.",
+      "primary": "Neem contact op",
+      "secondary": "Bekijk alle features"
+    }
+  },
+  "footer": {
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "demo": "Demo",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "contact": "Contact",
+    "apiDocs": "API Docs",
+    "company": "Bedrijf",
+    "about": "Over ons",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "tagline": "De virtuele paskamer voor elke webshop. Verhoog je conversie en verminder retouren.",
+    "copyright": "© {{year}} FiT by Brendr.io. Alle rechten voorbehouden."
+  },
+  "terms": {
+    "hero": {
+      "title": "Algemene Voorwaarden",
+      "updated": "Laatst bijgewerkt: 1 oktober 2025"
+    },
+    "sections": {
+      "definitions": {
+        "title": "1. Definities",
+        "lead": "In deze algemene voorwaarden worden de volgende termen gebruikt:",
+        "items": {
+          "fit": { "title": "FiT", "text": "De virtuele paskamerdienst aangeboden door EndResults" },
+          "platform": { "title": "Platform", "text": "De website en applicatie van FiT by BrendR" },
+          "provider": { "title": "Dienstverlener", "text": "EndResults, KVK 57445036" },
+          "user": { "title": "Gebruiker", "text": "Natuurlijke persoon die gebruik maakt van FiT" },
+          "retailer": { "title": "Retailer", "text": "Zakelijke gebruiker die FiT integreert" },
+          "session": { "title": "FiT-sessie", "text": "Een virtuele paskamer sessie" }
+        }
+      },
+      "services": {
+        "title": "2. Diensten",
+        "consumer": {
+          "title": "FiT Consumentendiensten",
+          "b1": "Virtuele paskamersessies",
+          "b2": "Opslag van profielgegevens en foto's",
+          "b3": "Pasmaten en -aanbevelingen",
+          "b4": "Sessiegeschiedenis"
+        },
+        "retailer": {
+          "title": "FiT Retailerdiensten",
+          "b1": "Widget-integratie voor webshops",
+          "b2": "Dashboard met analytics",
+          "b3": "Sessiemanagement en API-toegang"
+        },
+        "availability": "📌 Beschikbaarheid: EndResults streeft naar een beschikbaarheid van 99% op jaarbasis, exclusief gepland onderhoud."
+      },
+      "subscriptions": {
+        "title": "3. Abonnementen en prijzen",
+        "types": {
+          "title": "Abonnementstypen voor Retailers",
+          "starter": { "name": "Starter", "sessions": "50 sessies/maand" },
+          "professional": { "name": "Basic", "sessions": "500 sessies/maand" },
+          "business": { "name": "Premium", "sessions": "2.500 sessies/maand" },
+          "enterprise": { "name": "Enterprise", "custom": "Op maat", "sessions": "> 2.500 sessies/maand" }
+        },
+        "payment": {
+          "title": "Betalingsvoorwaarden",
+          "b1": "→ Betaling geschiedt vooraf per maand of jaar",
+          "b2": "→ Betalingen worden automatisch geïncasseerd via Stripe",
+          "b3": "→ Bij niet-betaling kan de toegang worden opgeschort",
+          "b4": "→ Prijzen zijn exclusief BTW"
+        }
+      },
+      "liability": {
+        "title": "4. Aansprakelijkheid",
+        "limit": {
+          "title": "Beperking aansprakelijkheid",
+          "lead": "EndResults is niet aansprakelijk voor:",
+          "b1": "Indirecte schade, gevolgschade of gederfde winst",
+          "b2": "Verlies van data of omzet",
+          "b3": "Schade door derden of hackers",
+          "b4": "Force majeure situaties"
+        },
+        "max": {
+          "title": "Maximale aansprakelijkheid",
+          "text": "De aansprakelijkheid is beperkt tot het bedrag dat door de verzekering wordt uitbetaald, of bij gebreke daarvan, tot het bedrag van de door Klant in de drie maanden voorafgaand aan het schadeveroorzakende feit betaalde vergoedingen."
+        }
+      },
+      "ip": {
+        "title": "5. Intellectueel eigendom",
+        "ownership": {
+          "title": "Eigendomsrechten",
+          "text": "Alle rechten op het Platform, technologie en content behoren toe aan EndResults ©. De naam \"FiT by BrendR\" en gerelateerde logo's zijn geregistreerde handelsmerken."
+        },
+        "license": {
+          "title": "Gebruikslicentie",
+          "text": "Gebruikers ontvangen een niet-exclusieve, niet-overdraagbare licentie, beperkt tot normaal gebruik conform deze voorwaarden. Retailers mogen de FiT-widget integreren op hun eigen website."
+        },
+        "ugc": {
+          "title": "Content van Gebruikers",
+          "text": "Gebruikers behouden eigendom van hun geüploade content. Gebruikers verlenen EndResults een licentie om content te gebruiken voor dienstverlening."
+        }
+      },
+      "contact": {
+        "title": "6. Contact",
+        "company": {
+          "title": "Bedrijfsgegevens",
+          "name": "EndResults",
+          "kvk": "57445036",
+          "vat": "NL002014399B73"
+        },
+        "address": {
+          "title": "Adres",
+          "line1": "Jupiterlaan 33",
+          "line2": "3318JC Dordrecht",
+          "country": "Nederland"
+        },
+        "contact": {
+          "title": "Contact opnemen",
+          "emailLabel": "Email:",
+          "websiteLabel": "Website:"
+        },
+        "cta": "Door gebruik te maken van FiT by BrendR verklaart u deze Algemene Voorwaarden te hebben gelezen, begrepen en geaccepteerd."
+      }
+    }
+  },
+  "privacy": {
+    "hero": {
+      "title": "Privacybeleid",
+      "updated": "Laatst bijgewerkt: 1 oktober 2025"
+    },
+    "intro": "Welkom bij FiT by BrendR. EndResults (\"wij\", \"ons\" of \"onze\") respecteert uw privacy en is toegewijd aan de bescherming van uw persoonlijke gegevens. Dit privacybeleid informeert u over hoe we omgaan met uw persoonlijke gegevens wanneer u onze website bezoekt en onze diensten gebruikt.",
+    "sections": {
+      "contact": {
+        "title": "1. Contactgegevens",
+        "labels": {
+          "businessName": "Bedrijfsnaam:",
+          "kvk": "KVK-nummer:",
+          "vat": "BTW-nummer:",
+          "country": "Land:",
+          "address": "Adres:"
+        }
+      },
+      "collect": {
+        "title": "2. Gegevens die wij verzamelen",
+        "personal": {
+          "title": "2.1 Persoonlijke identificatiegegevens",
+          "items": {
+            "name": "Naam en voornaam",
+            "email": "E-mailadres",
+            "birthdate": "Geboortedatum",
+            "gender": "Geslacht"
+          }
+        },
+        "business": {
+          "title": "2.2 Bedrijfsgegevens (voor retailers)",
+          "items": {
+            "company": "Bedrijfsnaam",
+            "website": "Website URL",
+            "type": "Bedrijfstype"
+          }
+        },
+        "profile": {
+          "title": "2.3 Profielgegevens",
+          "items": {
+            "photos": "Profielfoto's",
+            "body": "Lichaamsmaten (voor FiT-sessies)",
+            "prefs": "Productvoorkeuren"
+          }
+        },
+        "technical": {
+          "title": "2.4 Technische gegevens",
+          "items": {
+            "ip": "IP-adres",
+            "browser": "Browsertype en -versie",
+            "device": "Apparaattype",
+            "cookies": "Cookies en vergelijkbare technologieën"
+          }
+        }
+      },
+      "use": {
+        "title": "3. Hoe wij uw gegevens gebruiken",
+        "service": {
+          "title": "Dienstverlening",
+          "b1": "→ Leveren van virtuele paskamerdiensten",
+          "b2": "→ Verwerken van FiT-sessies",
+          "b3": "→ Personaliseren van uw ervaring",
+          "b4": "→ Beheren van uw account"
+        },
+        "billing": {
+          "title": "Betalingsverwerking",
+          "b1": "→ Verwerken van betalingen",
+          "b2": "→ Beheren van abonnementen",
+          "b3": "→ Verzenden van facturen"
+        },
+        "communication": {
+          "title": "Communicatie",
+          "b1": "→ Verzenden van bevestigingsmails",
+          "b2": "→ Servicegerelateerde mededelingen",
+          "b3": "→ Wachtwoord reset verzoeken",
+          "b4": "→ Updates over FiT-sessies"
+        },
+        "improve": {
+          "title": "Verbetering diensten",
+          "b1": "→ Analyseren van gebruikspatronen",
+          "b2": "→ Verbeteren van technologie",
+          "b3": "→ Ontwikkelen van nieuwe features",
+          "b4": "→ Optimaliseren gebruikerservaring"
+        }
+      },
+      "security": {
+        "title": "5. Gegevensopslag en beveiliging",
+        "storage": {
+          "title": "Opslaglocatie",
+          "text": "Uw gegevens worden opgeslagen op beveiligde servers binnen de Europese Unie via onze partner Supabase."
+        },
+        "measures": {
+          "title": "Beveiligingsmaatregelen",
+          "b1": "Encryptie van gegevens",
+          "b2": "Beveiligde authenticatie (JWT)",
+          "b3": "Regelmatige beveiligingsaudits",
+          "b4": "HTTPS-verbindingen"
+        },
+        "retention": {
+          "title": "Bewaartermijn",
+          "account": { "label": "Accountgegevens:", "value": "Zolang uw account actief is" },
+          "sessions": { "label": "FiT-sessiegegevens:", "value": "2 jaar na laatste sessie" },
+          "transactions": { "label": "Transactiegegevens:", "value": "7 jaar (wettelijke verplichting)" }
+        }
+      },
+      "rights": {
+        "title": "7. Uw rechten onder de AVG",
+        "access": { "title": "Recht op inzage", "text": "Opvragen van een kopie van uw persoonlijke gegevens" },
+        "rectification": { "title": "Recht op rectificatie", "text": "Corrigeren van onjuiste gegevens" },
+        "erasure": { "title": "Recht op verwijdering", "text": "Verzoeken om verwijdering van uw gegevens" },
+        "portability": { "title": "Recht op overdraagbaarheid", "text": "Gegevens in machineleesbaar formaat ontvangen" }
+      },
+      "deletion": {
+        "title": "Data Deletion Policy – FiT by Brendr",
+        "intro": "Bij FiT by Brendr hechten we veel waarde aan privacy en transparantie. Gebruikers kunnen op elk moment hun account verwijderen en hun persoonlijke gegevens laten wissen.",
+        "how": {
+          "title": "Hoe kun je je gegevens verwijderen",
+          "lead": "Als je je FiT-account wilt verwijderen, volg dan deze stappen:",
+          "steps": {
+            "s1": "1. Log in op je account",
+            "s2": "2. Ga naar /customer/profile",
+            "s3": "3. Scroll naar de sectie \"Account opheffen en gegevens verwijderen\"",
+            "s4": "4. Klik op de rode knop \"Account opheffen en gegevens verwijderen\"",
+            "s5": "5. Bevestig je keuze in het pop-upvenster"
+          },
+          "after": "✓ Na bevestiging: Je account wordt direct opgeheven en je ontvangt de melding: \"Je account is opgeheven en al je gegevens zijn verwijderd.\""
+        },
+        "what": {
+          "title": "Wat er gebeurt bij verwijdering",
+          "text": "Wanneer een gebruiker zijn of haar account verwijdert, worden alle persoonlijke gegevens permanent verwijderd of geanonimiseerd in overeenstemming met de AVG (GDPR).",
+          "deletedTitle": "De volgende gegevens worden verwijderd uit onze database:",
+          "deleted": {
+            "email": "E-mailadres",
+            "password": "Wachtwoord-hash",
+            "name": "Voor- en achternaam",
+            "photos": "Profielfoto('s) en pasfoto's",
+            "device": "Device ID en IP-adres",
+            "results": "Alle FiT-resultaten"
+          },
+          "supabaseText": "Daarnaast wordt de gebruiker volledig verwijderd uit de Supabase Authorisation-tabel. Niet-persoonlijke gegevens zoals technische instellingen, taal en land kunnen behouden blijven voor interne statistieken, maar zijn dan niet meer te herleiden tot een individu."
+        },
+        "irreversible": {
+          "title": "Onomkeerbaarheid",
+          "text": "Het verwijderen van een account is definitief. Na bevestiging kunnen FiT-sessies, beelden en accountinformatie niet meer worden hersteld."
+        },
+        "support": {
+          "title": "Vragen of ondersteuning",
+          "textPrefix": "Heb je vragen over gegevensverwijdering of privacy? Neem contact met ons op via"
+        }
+      },
+      "complaints": {
+        "title": "12. Contact en klachten",
+        "email": { "title": "Email" },
+        "phone": { "title": "Telefoon" },
+        "address": { "title": "Adres" },
+        "authorityTitle": "Klacht indienen bij toezichthouder",
+        "authorityLead": "U heeft het recht een klacht in te dienen bij de Autoriteit Persoonsgegevens:",
+        "authority": {
+          "website": "Website:",
+          "phone": "Telefoon:",
+          "address": "Postbus 93374, 2509 AJ Den Haag"
+        }
+      }
+    }
+  },
+  "unsubscribe": {
+    "hero": {
+      "title": "Je bent uitgeschreven",
+      "subtitle": "We hebben je uitschrijving voor onze e-mails succesvol verwerkt."
+    },
+    "body": {
+      "main": "Je ontvangt vanaf nu geen marketing- of update-mails meer van FiT by Brendr op dit e-mailadres.",
+      "noteService": "Let op: je kunt nog wel belangrijke serviceberichten ontvangen die nodig zijn om je account of FiT-sessies goed te laten werken (bijvoorbeeld wachtwoord-resets of beveiligingsmeldingen).",
+      "moreInfo": "Meer weten over hoe we met jouw gegevens omgaan? Lees ons"
+    }
+  },
+  "help": {
+    "hero": {
+      "title": "Veelgestelde vragen",
+      "subtitle": "Alles wat je moet weten over FiT, van integratie tot privacy en prijzen"
+    },
+    "seo": {
+      "title": "FAQ – FiT by Brendr | AI-gedreven virtuele paskamer voor webshops",
+      "description": "Ontdek alles over FiT, de AI-gedreven virtuele passessie voor webshops. Lees hoe FiT werkt, hoe je het integreert, prijzen en hoe het je conversie verhoogt."
+    },
+    "cta": {
+      "title": "Nog vragen?",
+      "subtitle": "Staat je vraag er niet tussen? Neem contact op met ons team, we helpen je graag verder!",
+      "primary": "Neem contact op",
+      "secondary": "Bekijk alle features"
+    },
+    "faq": {
+      "categories": [
+        {
+          "title": "Algemeen",
+          "questions": [
+            {
+              "q": "Wat is FiT?",
+              "a": "FiT is een AI-gedreven virtuele passessie waarmee klanten zichzelf kunnen zien met jouw producten. Door één foto te uploaden, ervaren ze direct hoe kleding, accessoires of andere items hen staan, rechtstreeks op jouw productpagina."
+            },
+            {
+              "q": "Hoe werkt FiT precies?",
+              "a": "Klanten uploaden een duidelijke foto van zichzelf. Onze AI combineert die foto met de productafbeelding en genereert in enkele seconden een realistisch resultaat. Zo krijgen ze een persoonlijke paservaring zonder de winkel te verlaten."
+            },
+            {
+              "q": "Voor wie is FiT bedoeld?",
+              "a": "FiT is ontwikkeld voor webshops en merken die hun klanten een unieke, interactieve winkelervaring willen bieden. Of je nu mode, brillen, sieraden, sportartikelen of zelfs voertuigen verkoopt. FiT maakt het persoonlijk."
+            }
+          ]
+        },
+        {
+          "title": "Gebruik & integratie",
+          "questions": [
+            {
+              "q": "Hoe integreer ik FiT in mijn webshop?",
+              "a": "Heel eenvoudig. Voeg één regel code toe aan je productpagina's en de FiT-knop verschijnt automatisch. Vanaf daar kunnen klanten direct hun passessie starten. Geen complexe installatie of technische kennis vereist."
+            },
+            {
+              "q": "Werkt FiT op alle webshopsystemen?",
+              "a": "Ja. FiT is compatibel met vrijwel elk platform, waaronder Shopify, WooCommerce, Magento en maatwerkwebsites."
+            },
+            {
+              "q": "Kan ik de look & feel aanpassen aan mijn merk?",
+              "a": "Zeker. Vanaf het Premium-plan kun je het FiT-logo uitschakelen en met ons Enterprise pakket kun je zelfs de kleuren en teksten afstemmen op jouw huisstijl."
+            }
+          ]
+        },
+        {
+          "title": "AI & privacy",
+          "questions": [
+            {
+              "q": "Worden mijn foto's opgeslagen of gedeeld?",
+              "a": "FiT behandelt alle beelden strikt vertrouwelijk. De foto’s die je uploadt worden tijdelijk verwerkt voor het genereren van pasbeelden en vervolgens veilig opgeslagen in jouw persoonlijke account binnen onze beveiligde database. Wil je dat je foto’s worden verwijderd? Dan kun je op elk moment een verzoek indienen om ze permanent te laten verwijderen."
+            },
+            {
+              "q": "Worden er echte mensen gebruikt in het proces?",
+              "a": "Nee. Alles wordt volledig automatisch uitgevoerd door onze AI-modellen. Er komt geen menselijke tussenkomst aan te pas."
+            },
+            {
+              "q": "Is FiT AVG-/GDPR-proof?",
+              "a": "Ja. We voldoen aan de Europese privacywetgeving. Alle data wordt veilig opgeslagen binnen de EU en kan op verzoek volledig worden verwijderd."
+            },
+            {
+              "q": "Hoe kan ik mijn account verwijderen en al mijn gegevens laten wissen?",
+              "a": "Je kunt je account opheffen via je profielpagina in de FiT-app.\n\nStappen:\n1. Ga naar /customer/profile\n2. Scroll naar \"Account opheffen en gegevens verwijderen\"\n3. Klik op de rode knop \"Account opheffen en gegevens verwijderen\"\n4. Bevestig in het pop-up venster\n\nLet op: dit is onomkeerbaar, eerdere FiT-sessies en beelden gaan definitief verloren."
+            }
+          ]
+        },
+        {
+          "title": "Resultaten & prestaties",
+          "questions": [
+            {
+              "q": "Wat levert FiT mijn webshop op?",
+              "a": "FiT verhoogt de klantbetrokkenheid, het vertrouwen en de conversie. Klanten die zichzelf met jouw producten zien, nemen sneller aankoopbeslissingen en retourneren minder vaak."
+            },
+            {
+              "q": "Hoe snel worden de beelden gegenereerd?",
+              "a": "Gemiddeld binnen 30 tot 40 seconden. De onderliggende technologie is nog volop in ontwikkeling en we verwachten verdere snelheidsverbeteringen."
+            },
+            {
+              "q": "Kan ik resultaten meten?",
+              "a": "Ja, maar de inzichten verschillen per abonnement:\n\n• Starter: teller van totaal aantal FiT-sessies met datumbereikfilter\n• Basic: alles van Starter + unieke gebruikers + overzicht van laatste 4 sessies\n• Premium: alles van Basic + volledig sessie-overzicht (geslacht, items, datum, PDP-link)\n• Enterprise: alles van Premium + conversietracking (bijv. Google Analytics)"
+            }
+          ]
+        },
+        {
+          "title": "Abonnementen & kosten",
+          "questions": [
+            {
+              "q": "Wat kost FiT?",
+              "a": "FiT biedt verschillende abonnementen op basis van passessies en functies. Er is een gratis Starter-plan om direct te testen. Bekijk de actuele plannen op onze tarievenpagina."
+            },
+            {
+              "q": "Wat gebeurt er als ik mijn limiet bereik?",
+              "a": "Je kunt extra sessiebundels toevoegen of upgraden naar een hoger plan. Zo behoud je controle over je kosten."
+            },
+            {
+              "q": "Kan ik FiT eerst gratis proberen?",
+              "a": "Ja. Met het Starter-plan kun je FiT gratis uitproberen op één webshop en tot 50 passessies per maand uitvoeren."
+            }
+          ]
+        },
+        {
+          "title": "Support & contact",
+          "questions": [
+            {
+              "q": "Bieden jullie ondersteuning bij de installatie?",
+              "a": "Ja. Ons team helpt graag bij de eerste implementatie en testfase. Je ontvangt duidelijke documentatie en voorbeeldcode."
+            },
+            {
+              "q": "Ik heb een technisch probleem. Hoe krijg ik hulp?",
+              "a": "Via het FiT-dashboard kun je rechtstreeks contact opnemen met onze supportafdeling. We reageren doorgaans binnen één werkdag."
+            },
+            {
+              "q": "Hoe neem ik contact op met het team van FiT?",
+              "a": "Stuur een email naar support@brendr.io of gebruik het contactformulier op de website (/contact)."
+            }
+          ]
+        },
+        {
+          "title": "Extra informatie",
+          "questions": [
+            {
+              "q": "Wat maakt FiT anders dan traditionele virtuele paskamers?",
+              "a": "Veel tools proberen maten te berekenen of 3D-modellen te bouwen. FiT kiest voor eenvoud en beleving; klanten zien zichzelf direct met het product, zonder maten in te voeren of een avatar te maken."
+            },
+            {
+              "q": "Werkt FiT alleen voor kleding?",
+              "a": "Nee. FiT ondersteunt meerdere categorieën zoals mode, schoenen, sieraden, brillen, motorhelmen, fietsen en zelfs auto-onderdelen."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "api": {
+    "hero": {
+      "title": "Zo eenvoudig integreer je FiT in je webshop",
+      "subtitle": "Het toevoegen van FiT is net zo makkelijk als het klinkt. Binnen één minuut kunnen je klanten al hun eerste virtuele passessie starten."
+    },
+    "steps": {
+      "s1": {
+        "title": "Kopieer je persoonlijke widgetcode",
+        "desc": "In je FiT-dashboard vind je jouw unieke API Key en Widget Code. Kopieer de volledige scriptregel uit het veld Widget Code.",
+        "widgetCode": "Widget Code",
+        "copy": "Kopieer",
+        "copied": "Gekopieerd!",
+        "tipLabel": "Tip:",
+        "tipText": "Deze code bevat jouw persoonlijke API-sleutel en zorgt ervoor dat de FiT-knop automatisch verschijnt op je productpagina's.",
+        "codeExample": "<script src=\"https://fit-production.up.railway.app/api/widget/bootstrap/[jouw_api_key]\" async></script>"
+      },
+      "s2": {
+        "title": "Plak de code in je webshop",
+        "p1": { "before": "Plak het script net boven de afsluitende", "after": "tag van je webshop, of op de productdetailpagina waar je de FiT-knop wilt tonen." },
+        "p2": "Gebruik je een CMS of e‑commerce platform zoals Shopify, WooCommerce of Magento? Voeg het script dan eenvoudig toe via ‘Custom HTML’ of ‘Theme code’ in je editor.",
+        "cards": {
+          "shopify": { "title": "Shopify", "hint": "Theme code → theme.liquid" },
+          "woocommerce": { "title": "WooCommerce", "hint": "Appearance → Theme Editor" },
+          "magento": { "title": "Magento", "hint": "Content → Design → Configuration" }
+        }
+      },
+      "s3": {
+        "title": "Klaar!",
+        "desc": "Zodra je het script hebt geplaatst, verschijnt de oranje FiT-knop automatisch op je productpagina's. Klanten kunnen direct een passessie starten, zonder extra configuratie of technische kennis.",
+        "cardTitle": "Je bent klaar om te starten!",
+        "cardText": "De FiT-knop is nu live op je webshop en je klanten kunnen direct hun eerste virtuele passessie beginnen."
+      },
+      "optional": {
+        "title": "Optioneel: Personaliseer je FiT‑ervaring",
+        "p1": "Wil je de FiT‑branding afstemmen op jouw merk? Vanaf het Premium‑plan kun je het BrendR‑watermerk in de FiT‑resultaten uitschakelen. Met het Enterprise‑plan kun je de volledige FiT‑widget aanpassen aan je huisstijl, inclusief eigen logo en kleuren.",
+        "noteLabel": "Let op:",
+        "noteText": "De FiT‑knop zelf heeft een vaste vormgeving om herkenbaarheid en consistentie te behouden."
+      }
+    },
+    "quickStart": {
+      "title": "Nog sneller starten",
+      "subtitle": "We raden aan om eerst te starten met het gratis Starter-plan om de integratie en klantrespons te ervaren.",
+      "primary": "Bekijk de tarieven en plannen",
+      "secondary": "Start nu gratis"
+    },
+    "support": {
+      "title": "Hulp nodig bij de integratie?",
+      "subtitle": "Ons support team helpt je graag verder met de installatie",
+      "contact": "Neem contact op"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "webshops": "Webwinkels",
+    "login": "Inloggen",
+    "loginConsumer": "Inloggen als consument",
+    "loginRetailer": "Inloggen als retailer",
+    "startFree": "Start nu gratis"
+  },
+  "fit": {
+    "uploadYourPhoto": "Upload je foto",
+    "previewAlt": "Voorbeeld",
+    "clickToSelectAnother": "Klik om een andere foto te selecteren",
+    "selectPhoto": "Selecteer een foto",
+    "fileTypesLimit": "JPG, PNG tot 10MB",
+    "tipsTitle": "Tips voor de beste resultaten:",
+    "tips": {
+      "uprightBackground": "Sta rechtop voor een neutrale achtergrond",
+      "goodLighting": "Zorg voor goede belichting",
+      "wellFittingClothes": "Draag goed passende kleding",
+      "lookAtCamera": "Kijk recht in de camera"
+    },
+    "uploading": "Uploaden...",
+    "startSession": "Start FiT Sessie",
+    "aiWorking": "AI aan het werk...",
+    "generatingPhoto": "We genereren je virtuele pasfoto. Dit duurt ongeveer 30 seconden.",
+    "sessionIdLabel": "Sessie ID:",
+    "sessionComplete": "FiT Sessie Voltooid!",
+    "resultMessage": "Je virtuele pasfoto is klaar. Registreer je om het resultaat te bekijken en op te slaan.",
+    "registerToView": "Registreer & Bekijk Resultaat",
+    "selectPhotoFirst": "Selecteer eerst een pasfoto",
+    "noProductsSelected": "Geen producten geselecteerd",
+    "aiFailed": "AI-verwerking is mislukt. Probeer het opnieuw.",
+    "processingSlow": "Processing duurt langer dan verwacht. Controleer je account later."
+  },
+  "categories": {
+    "GENERAL": "Algemeen",
+    "FASHION": "Kleding & Mode",
+    "BIKES": "Fietsen & E-bikes",
+    "SHOES": "Schoenen & Footwear",
+    "MOTORS": "Motoren & Scooters",
+    "GLASSES": "Brillen & Zonnebrillen",
+    "JEWELRY": "Sieraden & Accessoires",
+    "WATCHES": "Horloges",
+    "AUTOMOTIVE": "Automotive",
+    "FURNITURE": "Meubels & Interieur",
+    "BAGS": "Tassen & Bagage"
+  },
+  "customer": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "profile": "Mijn Profiel",
+      "photos": "Mijn Pasfoto's",
+      "sessions": "Mijn FiT Sessies",
+      "partners": "Webwinkels",
+      "logout": "Uitloggen"
+    },
+    "layout": {
+      "goToDashboardAria": "Ga naar dashboard",
+      "openNavigationAria": "Open navigatie"
+    },
+    "status": {
+      "completed": "Voltooid",
+      "processing": "Verwerken",
+      "failed": "Mislukt",
+      "pending": "Wachtend",
+      "unknown": "Onbekend"
+    },
+    "common": {
+      "unknownProduct": "Onbekend product",
+      "unknownStore": "Onbekende winkel",
+      "profilePhotoAlt": "Profielfoto",
+      "back": "Terug",
+      "view": "Bekijken",
+      "product": "Product",
+      "delete": "Verwijderen",
+      "cancel": "Annuleren",
+      "confirm": "Bevestigen",
+      "yesDelete": "Ja, verwijderen",
+      "deleting": "Verwijderen...",
+      "loading": "Laden...",
+      "results": "{{count}} resultaten",
+      "never": "Nooit",
+      "backToTop": "Terug naar boven",
+      "backToTopAria": "Terug naar boven",
+      "favoriteAdd": "Voeg toe aan favorieten",
+      "favoriteRemove": "Verwijder uit favorieten"
+    },
+    "dashboard": {
+      "welcome": "Welkom terug, {{name}}!",
+      "subtitle": "Hier is een overzicht van je FiT activiteiten",
+      "stats": {
+        "total": "Totaal FiT Sessies",
+        "completed": "Voltooide Sessies",
+        "last": "Laatste Sessie"
+      },
+      "ratings": {
+        "title": "Beoordelingen"
+      },
+      "recent": {
+        "title": "Recente FiT Sessies",
+        "subtitle": "Overzicht van je laatste virtuele paskamer sessies",
+        "viewAll": "Alle sessies bekijken"
+      },
+      "profile": {
+        "title": "Profiel Status",
+        "subtitle": "Zorg ervoor dat je profiel compleet is voor de beste FiT ervaring.",
+        "button": "Bekijk Profiel"
+      },
+      "newFit": {
+        "title": "Nieuwe FiT Sessie",
+        "subtitle": "Start een nieuwe virtuele paskamer sessie bij een van onze partners.",
+        "button": "Zoek Partners"
+      }
+    },
+    "sessions": {
+      "title": "Mijn FiT Sessies",
+      "subtitle": "Overzicht van al je virtuele paskamer sessies",
+      "filters": {
+        "title": "Filters en sortering",
+        "active": "{{count}} actief"
+      },
+      "search": {
+        "placeholder": "Zoek sessies..."
+      },
+      "filter": {
+        "storeAll": "Alle winkels",
+        "categoryAll": "Alle categorieën"
+      },
+      "sort": {
+        "label": "Sorteren:",
+        "date_desc": "Datum: nieuw → oud",
+        "date_asc": "Datum: oud → nieuw",
+        "store_asc": "Winkel: A → Z",
+        "store_desc": "Winkel: Z → A"
+      },
+      "view": {
+        "label": "Weergave:",
+        "grid": "Grid",
+        "list": "Lijst"
+      },
+      "no": {
+        "title": "Geen sessies gevonden",
+        "empty": "Je hebt nog geen FiT sessies. Start je eerste sessie bij een van onze partners!",
+        "filtered": "Geen sessies gevonden die voldoen aan je filters."
+      },
+      "actions": {
+        "view": "Bekijken",
+        "product": "Product",
+        "delete": "Verwijderen"
+      },
+      "confirmDelete": {
+        "title": "Weet je zeker dat je deze sessie wilt verwijderen?",
+        "text": "De sessie verdwijnt uit je overzicht. De data blijft bewaard voor trainingsdoeleinden.",
+        "cancel": "Annuleren",
+        "confirm": "Ja, verwijderen",
+        "deleting": "Verwijderen..."
+      },
+      "toast": {
+        "deleted": "Sessie verwijderd",
+        "deleteFailed": "Verwijderen mislukt",
+        "favUpdateFailed": "Favoriet bijwerken mislukt",
+        "favoriteAdded": "Toegevoegd aan favorieten",
+        "favoriteRemoved": "Verwijderd uit favorieten"
+      },
+      "backToTop": {
+        "aria": "Terug naar boven",
+        "label": "Terug naar boven"
+      },
+      "clearFilters": "Filters wissen",
+      "favorites": "Favorieten",
+      "badge": "{{count}} FiT sessies",
+      "ratingFilter": {
+        "showAll": "Toon alle sessies",
+        "up": "Alleen duimpjes omhoog",
+        "down": "Alleen duimpjes omlaag",
+        "none": "Alleen onbeoordeeld"
+      },
+      "favoritesTooltipOn": "Toon alle sessies",
+      "favoritesTooltipOff": "Alleen favorieten"
+    },
+    "sessionDetail": {
+      "back": "Terug naar sessies",
+      "resultTitle": "FiT Resultaat",
+      "processing": "Je FiT wordt verwerkt...",
+      "failed": "Er is een fout opgetreden bij het verwerken",
+      "noResult": "Geen resultaat beschikbaar",
+      "details": {
+        "title": "Sessie Details",
+        "status": "Status",
+        "category": "Categorie",
+        "created": "Aangemaakt",
+        "completed": "Voltooid"
+      },
+      "products": {
+        "title": "Producten ({{count}})",
+        "addedAt": "Toegevoegd op {{date}}",
+        "view": "Bekijk"
+      },
+      "retailer": {
+        "title": "Webshop",
+        "partner": "Partner winkel",
+        "visit": "Bezoek winkel"
+      },
+      "feedback": {
+        "prompt": "Wat vind je van dit resultaat? Geef je feedback hieronder.",
+        "label": "Feedback:",
+        "good": "Goed resultaat",
+        "bad": "Verbetering nodig",
+        "infoTitle": "Toelichting bekijken"
+      },
+      "negative": {
+        "title": "Vertel ons meer",
+        "question": "Wat kan er beter aan dit FiT resultaat?",
+        "placeholder": "Jouw toelichting...",
+        "cancel": "Annuleren",
+        "send": "Versturen"
+      },
+      "toast": {
+        "positiveSaved": "Bedankt! Je positieve feedback is opgeslagen.",
+        "negativeSaved": "Bedankt! Je feedback is opgeslagen.",
+        "saveFailed": "Opslaan mislukt. Probeer het opnieuw.",
+        "explainMin": "Geef a.u.b. een korte toelichting (min. 5 tekens).",
+        "copied": "Afbeeldingslink gekopieerd naar klembord",
+        "shareFailed": "Delen mislukt. Probeer opnieuw.",
+        "noResult": "Geen resultaat om te delen"
+      },
+      "shareText": "Hé, kijk mij eens! Wat denk jij, is dit een fit?",
+      "shareTitle": "Mijn FiT Resultaat"
+    },
+    "profile": {
+      "header": {
+        "title": "Mijn Profiel",
+        "subtitle": "Beheer je persoonlijke gegevens en instellingen."
+      },
+      "personal": {
+        "title": "Persoonlijke Gegevens",
+        "email": "Email (Gebruikersnaam)",
+        "emailPlaceholder": "Geen email beschikbaar",
+        "firstName": "Voornaam",
+        "firstNamePlaceholder": "Jouw voornaam",
+        "lastName": "Achternaam",
+        "lastNamePlaceholder": "Jouw achternaam",
+        "dateOfBirth": "Geboortedatum",
+        "dateOfBirthTooltip": "Altijd handig voor felicitaties",
+        "gender": "Geslacht",
+        "genderSelect": "Selecteer geslacht",
+        "genderMale": "Man",
+        "genderFemale": "Vrouw",
+        "genderOther": "Geheim",
+        "country": "Land",
+        "countryTooltip": "Voor lokale voorkeuren en verzending",
+        "countryPlaceholder": "Nederland",
+        "language": "Taal",
+        "languageTooltip": "Tonen we je alles in jouw voorkeurstaal",
+        "languageNl": "Nederlands",
+        "languageEn": "English",
+        "languageDe": "Deutsch",
+        "languageFr": "Français"
+      },
+      "physical": {
+        "title": "Fysieke Gegevens",
+        "height": "Lengte (cm)",
+        "heightTooltip": "Voor accurate pasvorm berekeningen",
+        "weight": "Gewicht (kg)",
+        "weightTooltip": "Voor accurate pasvorm berekeningen"
+      },
+      "password": {
+        "title": "Wachtwoord",
+        "change": "Wachtwoord Aanpassen",
+        "cancel": "Annuleren",
+        "hidden": "Wachtwoord verborgen voor beveiliging",
+        "new": "Nieuw Wachtwoord",
+        "min8": "Minimaal 8 karakters",
+        "confirm": "Bevestig Nieuw Wachtwoord"
+      },
+      "delete": {
+        "title": "Account opheffen en gegevens verwijderen",
+        "desc": "Als je je account opheft, verwijderen we al je persoonlijke gegevens en FiT sessies. Dit kan niet ongedaan worden gemaakt.",
+        "button": "Account opheffen en gegevens verwijderen",
+        "modalTitle": "Account opheffen en gegevens verwijderen",
+        "modalDesc": "Weet je zeker dat je je account wilt opheffen? Je raakt al je FiT sessies en gegevens permanent kwijt. Dit kan niet meer hersteld worden.",
+        "cancel": "Annuleren",
+        "confirm": "Ja, verwijder al mijn gegevens"
+      },
+      "toast": {
+        "loadError": "Fout bij het laden van je profiel",
+        "saveSuccess": "Profiel succesvol opgeslagen!",
+        "saveError": "Fout bij het opslaan van het profiel",
+        "passwordMismatch": "Nieuw wachtwoord en bevestiging komen niet overeen",
+        "passwordTooShort": "Wachtwoord moet minimaal 8 karakters lang zijn",
+        "passwordChangeSuccess": "Wachtwoord succesvol gewijzigd!",
+        "passwordChangeError": "Fout bij het wijzigen van het wachtwoord",
+        "accountDeleted": "Je account is opgeheven en al je gegevens zijn verwijderd"
+      }
+    },
+    "photos": {
+      "header": {
+        "title": "Mijn Pasfoto's",
+        "subtitle": "Upload je pasfoto's voor de beste FiT ervaring. Deze foto's worden gebruikt om AI-gegenereerde combinaties te maken met productfoto's."
+      },
+      "sections": {
+        "front": { "title": "Pasfoto Voorzijde", "desc": "Maak een selfie of vraag iemand anders om een foto van je gezicht te maken vanaf de voorkant." },
+        "side": { "title": "Pasfoto Zijkant", "desc": "Maak een selfie of vraag iemand anders om een foto van je gezicht te maken vanaf de zijkant." },
+        "fullbody_front": { "title": "Volledig Postuur Voorkant", "desc": "Sta rechtop, armen langs je lichaam, kijk naar de camera" },
+        "fullbody_side": { "title": "Volledig Postuur Zijkant", "desc": "Sta rechtop, armen langs je lichaam, profiel naar de camera" },
+        "family": { "title": "Gezin", "subtitle": "Voeg optioneel foto's toe voor partner en gezinsleden." },
+        "spouse": { "title": "Partner", "desc": "Upload een duidelijke foto van het gezicht van je partner (voorzijde)." },
+        "member1": { "title": "Gezinslid 1", "desc": "Upload een duidelijke foto van gezinslid 1 (voorzijde)." },
+        "member2": { "title": "Gezinslid 2", "desc": "Upload een duidelijke foto van gezinslid 2 (voorzijde)." },
+        "member3": { "title": "Gezinslid 3", "desc": "Upload een duidelijke foto van gezinslid 3 (voorzijde)." },
+        "member4": { "title": "Gezinslid 4", "desc": "Upload een duidelijke foto van gezinslid 4 (voorzijde)." },
+        "rooms": { "title": "Ruimtes", "subtitle": "Voeg een foto van een ruimte toe." },
+        "room_1": { "title": "Ruimte 1", "desc": "Upload een duidelijke foto van de ruimte." }
+      },
+      "tips": {
+        "title": "Tips voor de beste foto's",
+        "t1": "Zorg voor goede belichting, bij voorkeur natuurlijk licht",
+        "t2": "Gebruik een neutrale achtergrond (wit of licht gekleurd)",
+        "t3": "Draag goed passende kleding die je lichaamsvorm toont",
+        "t4": "Sta rechtop en ontspannen voor de beste resultaten"
+      },
+      "ui": {
+        "yourPhoto": "Jouw foto",
+        "exampleLabel": "Voorbeeld foto",
+        "replace": "Vervangen",
+        "seeFull": "Zie volledige foto",
+        "uploading": "Uploaden...",
+        "dragHereOr": "Sleep foto hierheen of",
+        "selectFile": "Selecteer bestand",
+        "maxSize": "Max 2MB • JPG, PNG, GIF, WebP"
+      },
+      "toast": {
+        "loadProfileError": "Fout bij het laden van het profiel",
+        "photoUploaded": "Foto succesvol geüpload!",
+        "fileTooLarge": "Bestand te groot. Maximum grootte is 2MB",
+        "uploadError": "Fout bij uploaden van foto",
+        "uploadGeneric": "Er is een fout opgetreden bij het uploaden"
+      }
+    },
+    "partners": {
+      "back": "Terug",
+      "title": "Zoekpartners",
+      "filters": {
+        "title": "Filters en sortering",
+        "active": "actief",
+        "searchLabel": "Zoek op winkelnaam",
+        "placeholder": "Bijv. ZooZoo",
+        "category": "Categorie",
+        "allCategories": "Alle categorieën",
+        "sortBy": "Sorteren op",
+        "nameAsc": "Winkelnaam (A-Z)",
+        "categoryAsc": "Categorie (A-Z)"
+      },
+      "loading": "Laden...",
+      "error": "Kon partners niet laden",
+      "results": "{{count}} resultaten",
+      "visitShop": "Bezoek webshop"
+    }
+  },
+  "widget": {
+    "buttonTry": "Probeer met FiT"
+  }
+,
+  "retailer": {
+    "nav": {
+      "back": "Terug",
+      "dashboard": "Dashboard",
+      "webshops": "Webshops",
+      "settings": "Instellingen",
+      "subscription": "Abonnement",
+      "logout": "Uitloggen",
+      "welcome": "Welkom, {{name}}",
+      "starter": "Starter",
+      "basic": "Basic",
+      "premium": "Premium",
+      "enterprise": "Enterprise"
+    },
+    "dashboard": {
+      "title": "FiT Dashboard",
+      "filter": { "period": "Periode:", "apply": "Toepassen", "reset": "Reset", "shop": "Webshop:", "total": "Totaal (alle webshops)" },
+      "stats": { "totalSessions": "Totaal FiT Sessies", "uniqueUsers": "Unieke gebruikers" },
+      "zero": {
+        "title": "Installeer de FiT widget op je webshop",
+        "desc": "Heb je de FiT widget al geïnstalleerd? Zonder installatie kunnen je bezoekers FiT nog niet gebruiken op jouw webshop. De unieke FiT code tref je bij je webshop gegevens.",
+        "cta": "Bekijk je webshops"
+      },
+      "recent": {
+        "title": "Recente FiT Sessies",
+        "subtitle": "Overzicht van de laatste virtuele paskamer sessies",
+        "viewAll": "Bekijk alle FiT sessies",
+        "onlyPremium": "Beschikbaar vanaf Premium",
+        "onlyPremiumTooltip": "Beschikbaar vanaf Premium"
+      },
+      "toasts": {
+        "apiKeyCopied": "API key gekopieerd",
+        "copyFailed": "Kopiëren mislukt",
+        "widgetCopied": "Widget code gekopieerd"
+      }
+    },
+    "webshops": {
+      "title": "Webshops",
+      "subtitle": "Beheer meerdere webshops binnen je account. Elke webshop heeft zijn eigen API key en domeinen.",
+      "toggle": { "open": "+ Nieuwe webshop toevoegen", "close": "Annuleren" },
+      "create": {
+        "title": "Nieuwe webshop",
+        "fields": {
+          "name": "Webshopnaam",
+          "namePlaceholder": "Bijv. Mijn Shop",
+          "category": "Categorie",
+          "language": "Taal",
+          "url": "Website URL",
+          "urlPlaceholder": "mijnshop.nl",
+          "active": "Actief",
+          "domainAdd": "Domein toevoegen",
+          "domainPlaceholder": "https://shop.example",
+          "add": "Voeg toe"
+        },
+        "help": { "chooseCategory": "Het is belangrijk om de juiste categorie te selecteren voor je webshop. Elke categorie is specifiek ingericht en beschikt over unieke kenmerken die aansluiten op het type producten binnen die categorie." },
+        "submit": "Aanmaken",
+        "submitting": "Aanmaken..."
+      },
+      "loading": "Laden...",
+      "errorLoad": "Kon webshops niet laden",
+      "status": { "active": "Actief", "inactive": "Inactief" },
+      "noUrl": "Geen URL ingesteld",
+      "fields": {
+        "websiteUrl": "Website URL",
+        "domains": "Domeinen",
+        "domainsNone": "Geen domeinen ingesteld"
+      },
+      "actions": {
+        "edit": "Bewerken",
+        "save": "Opslaan",
+        "cancel": "Annuleren",
+        "rotateKey": "API Key roteren",
+        "delete": "Verwijderen",
+        "copyApiKey": "Kopieer API Key"
+      },
+      "toasts": {
+        "createUrlRequired": "Voer een geldige webshop URL in",
+        "createUrlInvalid": "Voer een geldige webshop-URL in, bijv. https://mijnshop.nl",
+        "createSuccess": "Webshop aangemaakt",
+        "createError": "Aanmaken mislukt",
+        "limitReached": "Shop limiet bereikt voor huidig abonnement —",
+        "upgradeAccount": "Upgrade je account",
+        "editSuccess": "Wijzigingen opgeslagen",
+        "editError": "Opslaan mislukt",
+        "brandingPremiumOnly": "Branding verbergen is alleen beschikbaar voor Premium/Enterprise —",
+        "rotateSuccess": "API key geroteerd",
+        "rotateError": "Roteren mislukt",
+        "deleteSuccess": "Webshop verwijderd",
+        "deleteError": "Verwijderen mislukt",
+        "logoUploaded": "Logo geüpload",
+        "uploadError": "Upload mislukt"
+      },
+      "widget": {
+        "title": "FiT Widget",
+        "desc": "Voeg de FiT button toe aan je webshop om klanten virtueel te laten passen.",
+        "apiKey": "API Key",
+        "code": "Widget Code",
+        "copyCodeBtn": "Kopieer Widget Code",
+        "installation": "Installatie:",
+        "installationNote": "Plak de script tag in de <head> sectie van je webshop. De FiT button verschijnt automatisch bij add-to-cart knoppen."
+      },
+      "logo": {
+        "title": "Webshop logo",
+        "hint": "Gebruik een PNG of SVG met transparante achtergrond (max 2MB).",
+        "none": "Nog geen logo geüpload.",
+        "alt": "Webshop logo"
+      },
+      "branding": {
+        "title": "Branding verbergen",
+        "aria": "Branding verbergen",
+        "hideNote": "Verberg FiT/BrendR logo in widget (Premium/Enterprise)",
+        "status": { "hidden": "Branding verborgen", "visible": "Branding zichtbaar" }
+      },
+      "promo": {
+        "title": "Promo banner",
+        "ariaOn": "Promo aan",
+        "onLabel": "Promo aan",
+        "on": "Promo aan",
+        "off": "Promo uit",
+        "startOptional": "Start (optioneel)",
+        "endOptional": "Einde (optioneel)",
+        "start": "Start",
+        "end": "Einde",
+        "noPeriod": "Geen periode ingesteld"
+      },
+      "colors": {
+        "titleEnterprise": "Widget kleuren (Enterprise)",
+        "gradientFrom": "Gradient van (.from-orange-500)",
+        "gradientTo": "Gradient naar (.to-orange-600)",
+        "buttonBg": "Knop achtergrond (.bg-orange-500)",
+        "buttonBorder": "Knop rand (.border-orange-500)",
+        "tileText": "Tegel tekst (.text-orange-600)",
+        "tileBorder": "Tegelrand (.border-slate-200)",
+        "shadowColor": "Schaduw kleur (.shadow-orange-500/30)",
+        "shadowPlaceholder": "#2bf9164d of rgba(43,249,22,0.3)",
+        "tip": "Tip: gebruik 8-cijferige hex voor transparantie (bijv. #RRGGBBAA).",
+        "short": { "from": "Van", "to": "Naar", "buttonBg": "Knop BG", "buttonBorder": "Knop rand", "tileText": "Tegel tekst", "tileBorder": "Tegelrand" },
+        "legendTitle": "Kleuren legenda",
+        "legendAlt": "Kleuren legenda"
+      },
+      "empty": { "title": "Nog geen webshops", "desc": "Voeg je eerste webshop toe om te beginnen met FiT." },
+      "confirmDelete": { "title": "Webshop verwijderen", "description": "Weet je zeker dat je deze webshop wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.", "cancel": "Annuleren", "confirm": "Verwijderen" },
+      "unsaved": { "title": "Niet opgeslagen wijzigingen", "description": "Je hebt aanpassingen gedaan voor deze webshop die nog niet zijn opgeslagen. Wil je deze nog opslaan?", "cancel": "Nee", "confirm": "Ja, opslaan" },
+      "aria": { "activeToggle": "Webshop actief" }
+    },
+    "settings": {
+      "title": "FiT Instellingen",
+      "subscription": { "title": "Abonnement", "youHave": "Je hebt momenteel een", "adjust": "Aanpassen", "closeAccount": "Account opheffen" },
+      "personal": {
+        "title": "Persoonlijke Gegevens",
+        "firstName": "Voornaam",
+        "lastName": "Achternaam",
+        "email": "E-mailadres",
+        "emailNote": "E-mailadres kan niet worden gewijzigd",
+        "firstNameError": "Voornaam is verplicht",
+        "lastNameError": "Achternaam is verplicht",
+        "shopNameError": "Winkelnaam is verplicht",
+        "shopUrlError": "Webshop URL is verplicht",
+        "shopUrlInvalid": "Voer een geldige URL in (bijv. mijnshop.nl)"
+      },
+      "domain": {
+        "successMessage": "Domein succesvol bijgewerkt",
+        "domainError": "Domein is verplicht",
+        "domainInvalid": "Voer een geldig domein in (bijv. mijnshop.nl)",
+        "domainNameError": "Webshop naam is verplicht"
+      },
+      "promo": { "title": "Promo & Branding", "desc": "Promo banner en branding beheer je nu per webshop.", "goToWebshops": "Ga naar Webshops om per webshop de Branding verbergen toggle en Promo periode in te stellen." },
+      "password": {
+        "title": "Wachtwoord",
+        "desc": "Wijzig je wachtwoord om je account veilig te houden.",
+        "change": "Wachtwoord Wijzigen",
+        "cancel": "Annuleren",
+        "current": "Huidig Wachtwoord",
+        "new": "Nieuw Wachtwoord",
+        "confirm": "Bevestig Nieuw Wachtwoord",
+        "changing": "Wijzigen...",
+        "changeBtn": "Wachtwoord Wijzigen",
+        "currentPasswordError": "Huidig wachtwoord is verplicht",
+        "newPasswordError": "Nieuw wachtwoord is verplicht",
+        "newPasswordLengthError": "Wachtwoord moet minimaal 8 karakters zijn",
+        "confirmPasswordError": "Wachtwoorden komen niet overeen",
+        "successMessage": "Wachtwoord succesvol gewijzigd",
+        "error": "Er is een fout opgetreden bij het wijzigen van het wachtwoord"
+      },
+      "deleteModal": {
+        "title": "Account opheffen",
+        "text": "Weet je zeker dat je dit account wilt opheffen? Alle websites waarop FiT actief was zullen hierdoor geen FiT-knop meer tonen.",
+        "cancel": "Annuleren",
+        "confirm": "Ja, account opheffen"
+      },
+      "successMessage": "Profiel succesvol bijgewerkt",
+      "generalError": "Er is een fout opgetreden"
+    },
+    "subscription": {
+      "title": "Abonnement",
+      "header": { "title": "Kies je plan", "subtitle": "Je huidige abonnement: {{plan}}" },
+      "billing": { "monthly": "Prijzen bij maandelijkse facturatie", "yearly": "Prijzen bij facturatie per jaar*", "note": "*Na 12 maanden elke maand opzegbaar" },
+      "currency": "Valuta:",
+      "currentBadge": "Je huidige abonnement",
+      "tabs": {
+        "abonnement": "Abonnementen",
+        "payments": "Facturen & Betalingen",
+        "credits": "Tegoed & opwaarderen"
+      },
+      "payments": {
+        "title": "Facturen & betalingen",
+        "subtitle": "Bekijk je recente facturen en beheer je betaalmethode via Stripe.",
+        "portal": "Open Stripe klantportaal",
+        "table": {
+          "date": "Datum",
+          "amount": "Bedrag",
+          "status": "Status",
+          "actions": "Acties",
+          "empty": "Geen facturen gevonden.",
+          "downloadPdf": "Download PDF",
+          "viewOnline": "Bekijk online"
+        }
+      },
+      "credits": {
+        "title": "Tegoed & opwaarderen",
+        "subtitle": "Bekijk je huidige FiT-tegoed en koop extra bundels wanneer nodig.",
+        "stats": {
+          "available": "Beschikbaar",
+          "consumed": "Gebruikt",
+          "purchased": "Bundels (gekocht)",
+          "included": "Inbegrepen"
+        },
+        "buy": {
+          "title": "Extra bundel kopen",
+          "description": "Koop extra FiTs voor deze maand. Het aanbevolen pakket wordt automatisch gekozen op basis van je abonnement.",
+          "recommendedLabel": "Aanbevolen",
+          "fits": "FiTs",
+          "price": "Prijs",
+          "button": "Koop extra bundel",
+          "note": "Je wordt doorgestuurd naar Stripe checkout"
+        }
+      }
+    }
+  }
+}
